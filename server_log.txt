@@ -1,0 +1,52 @@
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:49:52] filterscripts = ""  (string)
+[18:49:52] 
+[18:49:52] Server Plugins
+[18:49:52] --------------
+[18:49:52]  Loaded 0 plugins.
+
+[18:49:52] 
+[18:49:52] Filterscripts
+[18:49:52] ---------------
+[18:49:52]   Loaded 0 filterscripts.
+
+[18:49:52] Script[gamemodes/GMB.amx]: Run time error 20: "Invalid index parameter (bad entry point)"
+[18:49:52] Number of vehicle models: 0
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:50:31] filterscripts = ""  (string)
+[18:50:31] 
+[18:50:31] Server Plugins
+[18:50:31] --------------
+[18:50:31]  Loaded 0 plugins.
+
+[18:50:31] 
+[18:50:31] Filterscripts
+[18:50:31] ---------------
+[18:50:31]   Loaded 0 filterscripts.
+
+[18:50:31] Script[gamemodes/GMB.amx]: Run time error 20: "Invalid index parameter (bad entry point)"
+[18:50:31] Number of vehicle models: 0
+[18:50:50] [connection] 25.100.97.132:58288 requests connection cookie.
+[18:50:51] [connection] incoming connection: 25.100.97.132:58288 id: 0
+[18:50:51] [join] Lest_ has joined the server (0:25.100.97.132)
+[18:50:57] [part] Lest_ has left the server (0:1)
+[18:51:41] [connection] 25.100.97.132:59507 requests connection cookie.
+[18:51:42] [connection] incoming connection: 25.100.97.132:59507 id: 0
+[18:51:42] [join] Lest_ has joined the server (0:25.100.97.132)
+[18:57:26] [part] Lest_ has left the server (0:1)
