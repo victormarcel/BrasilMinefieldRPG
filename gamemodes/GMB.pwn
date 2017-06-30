@@ -1,16 +1,58 @@
-// This is a comment
-// uncomment the line below if you want to write a filterscript
-//#define FILTERSCRIPT
-
+//================= INCLUDES =============================================
+#include <a_mysql>
 #include <a_samp>
+//========================================================================
 
-#define COLOR_RED                0xAA3333AA
+//================= MYSQL CONFIGURATIONS =================================
+#define MYSQL_HOST "127.0.0.1"
+#define MYSQL_USER "root"
+#define MYSQL_PASS ""
+#define MYSQL_DB "dbmodobrasil"
+//========================================================================
+
+//================= DEFINES ==============================================
+
+//========================================================================
+
+//================= GLOBAL VARIABLES =====================================
+new dbhandle;
+//========================================================================
+
+#if defined FILTERSCRIPT
+
+public OnFilterScriptInit()
+{
+	print("\n--------------------------------------");
+	print(" Blank Filterscript by your name here");
+	print("--------------------------------------\n");
+	return 1;
+}
+
+public OnFilterScriptExit()
+{
+	return 1;
+}
+
+#else
+
+main()
+{
+	print("\n----------------------------------");
+	print(" Blank Gamemode by your name here");
+	print("----------------------------------\n");
+}
+
+#endif
 
 public OnGameModeInit()
 {
-	// Don't use these lines if it's a filterscript	
+	// Don't use these lines if it's a filterscript
 	SetGameModeText("Blank Script");
-	AddPlayerClass(0, 2113.8452,1290.7858,10.3017, 269.1425, 0, 0, 0, 0, 0, 0);
+	AddPlayerClass(0, 1958.3783, 1343.1572, 15.3746, 269.1425, 0, 0, 0, 0, 0, 0);
+	
+	//MySQL
+	dbhandle = mysql_connect(MYSQL_HOST, MYSQL_USER, MYSQL_DB, MYSQL_PASS);
+	
 	return 1;
 }
 
@@ -21,19 +63,46 @@ public OnGameModeExit()
 
 public OnPlayerRequestClass(playerid, classid)
 {
-	SendClientMessage (playerid, COLOR_RED, "OnPlayerRequestClass" );	
-	SetPlayerCameraPos(playerid, 2003.6561,1330.4340,10.0156);
-	SetPlayerCameraLookAt(playerid, 2003.6561,1330.4340,10.0156);
+	SetPlayerPos(playerid, 1958.3783, 1343.1572, 15.3746);
+	SetPlayerCameraPos(playerid, 1958.3783, 1343.1572, 15.3746);
+	SetPlayerCameraLookAt(playerid, 1958.3783, 1343.1572, 15.3746);
+	return 1;
+}
+
+forward OnUserCheck(playerid);
+public OnUserCheck(playerid)
+{
+	new num_rows,num_fields;
+	cache_get_data(num_rows,num_fields,dbhandle);
+	if(num_rows==0)
+	{
+	    //Registrierung
+	    SendPlayerMessageToPlayer(0, playerid, "Deu Errado.");
+	}
+	else
+	{
+	    //Login
+		SendPlayerMessageToPlayer(0, playerid, "Deu Certo muleque.");
+	}
 	return 1;
 }
 
 public OnPlayerConnect(playerid)
-{
+{	
+	
+	// teste sql
+	new name[MAX_PLAYER_NAME], query[128];
+	GetPlayerName(playerid,name,sizeof(name));
+	format(query,sizeof(query), "SELECT * FROM USUARIO WHERE UPPER(NOME) = '%'", name);
+	mysql_function_query(dbhandle, query, true, "OnUserCheck", "i", playerid);
+	//-------------------------
+	
 	return 1;
 }
 
 public OnPlayerDisconnect(playerid, reason)
 {
+	mysql_close(dbhandle);
 	return 1;
 }
 
