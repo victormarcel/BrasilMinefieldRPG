@@ -1,0 +1,25 @@
+ Protioso Gerenciamento de Dados (PGD) 1.0, por [VGS]Protioso_OC
+
+ Versão: 1.0
+
+----------------------------------------
+  Uso:
+
+   Coloque no início de seu script #include <PGD>;
+   Saiba mais lendo o arquivo PGD Manual.txt (\pawno\include\PGD).
+----------------------------------------
+
+  Arquivos principais:
+
+   Licença.txt (\pawno\include\PGD);
+   PGD Manual.txt (\pawno\include\PGD);
+   PGD.inc + arquivos do include.
+----------------------------------------
+
+  Links:
+
+   http://vgs.br30.com/
+   http://www.fsf.org/
+----------------------------------------
+
+ 

@@ -1,0 +1,15 @@
+[eg1_entries]
+
+EG1_KILL_HELP = This command kills you
+
+EG1_DROP_HELP_0 = This command drops you from very high
+EG1_DROP_HELP_1 = It will probably kill you
+
+EG1_DROP_MSG_0 = Setting your height to %.2f
+EG1_DROP_MSG_1 = Have fun!
+
+EG1_DROP_SPLAT = %s is about to go SPLAT!
+
+[eg1_spares]
+
+EG1_NOT_LOAD = This won't be loaded

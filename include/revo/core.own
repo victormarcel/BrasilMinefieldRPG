@@ -1,0 +1,81 @@
+/*RevolutioN Core Functions
+
+Favor não utilizar sem autorização
+Copyright © Infernus Dev. Group
+*/
+#include <a_samp>
+
+public IsNumeric(const string[]) {//By Mike
+	for (new i = 0, j = strlen(string); i < j; i++) if (string[i] > '9' || string[i] < '0') return 0;
+	return 1;}
+
+public GetPlayerDistanceToPoint(playerid,Float:x,Float:y)
+{
+	new Float:x1,Float:y1,Float:z1;
+	new Float:tmpdis;
+	GetPlayerPos(playerid,x1,y1,z1);
+	tmpdis = floatsqroot(floatpower(floatabs(floatsub(x,x1)),2)+floatpower(floatabs(floatsub(y,y1)),2));
+	return floatround(tmpdis);
+}
+
+public Taxi() {
+	for(new i=0; i<MAX_PLAYERS; i++){
+		if(Taximetro[i][0] == 1){
+			if(GetPlayerMoney(i) > PrecoCorrida[i] + 3){
+			    new string[256];
+				PrecoCorrida[i] = PrecoCorrida[i] + 3;
+				format(string, sizeof(string), "O taxímetro mostra: $%d", PrecoCorrida[i]);
+				SendClientMessage(i, COLOR_GREEN, string);
+				SendClientMessage(Taximetro[i][1], COLOR_GREEN, string);
+			}
+			if(GetPlayerMoney(i) < PrecoCorrida[i] + 3){
+				SendClientMessage(i, COLOR_RED, "Você não tem mais dinheiro para o taxi, vai ficar aqui");
+				SendClientMessage(Taximetro[i][1], COLOR_RED, "Seu passageiro ficou sem dinheiro e por isso foi deixado aqui.");
+				GivePlayerMoney(i, 0 - PrecoCorrida[i]);
+				GivePlayerMoney(Taximetro[i][1], PrecoCorrida[i]);
+				RemovePlayerFromVehicle(i);
+				PrecoCorrida[i] = 0;
+				Taximetro[i][1] = 0;
+				Taximetro[i][0] = 0;
+			}
+		}
+		if(ATaximetro[i][0] == 1){
+			if(GetPlayerMoney(i) > PrecoCorrida[i] + 15){
+			    new string[256];
+				PrecoCorrida[i] = PrecoCorrida[i] + 15;
+				format(string, sizeof(string), "O aero-taxímetro mostra: $%d", PrecoCorrida[i]);
+				SendClientMessage(i, COLOR_GREEN, string);
+				SendClientMessage(Taximetro[i][1], COLOR_GREEN, string);
+			}
+			if(GetPlayerMoney(i) < PrecoCorrida[i] + 15){
+				SendClientMessage(i, COLOR_RED, "Você não tem mais dinheiro para o taxi, vai ficar aqui.");
+				SendClientMessage(Taximetro[i][1], COLOR_RED, "Seu passageiro ficou sem dinheiro e por isso foi deixado aqui.");
+				GivePlayerMoney(i, 0 - PrecoCorrida[i]);
+				GivePlayerMoney(Taximetro[i][1], PrecoCorrida[i]);
+				RemovePlayerFromVehicle(i);
+				PrecoCorrida[i] = 0;
+				ATaximetro[i][1] = 0;
+				ATaximetro[i][0] = 0;
+			}
+		}
+		if(MTaximetro[i][0] == 1){
+			if(GetPlayerMoney(i) > PrecoCorrida[i] + 5){
+			    new string[256];
+				PrecoCorrida[i] = PrecoCorrida[i] + 5;
+				format(string, sizeof(string), "O moto-taxímetro mostra: $%d", PrecoCorrida[i]);
+				SendClientMessage(i, COLOR_GREEN, string);
+				SendClientMessage(Taximetro[i][1], COLOR_GREEN, string);
+			}
+			if(GetPlayerMoney(i) < PrecoCorrida[i] + 5){
+				SendClientMessage(i, COLOR_RED, "Você não tem mais dinheiro para o taxi, vai ficar aqui.");
+				SendClientMessage(Taximetro[i][1], COLOR_RED, "Seu passageiro ficou sem dinheiro e por isso foi deixado aqui.");
+				GivePlayerMoney(i, 0 - PrecoCorrida[i]);
+				GivePlayerMoney(Taximetro[i][1], PrecoCorrida[i]);
+				RemovePlayerFromVehicle(i);
+				PrecoCorrida[i] = 0;
+				MTaximetro[i][1] = 0;
+				MTaximetro[i][0] = 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,206 @@
+//       Criado por Bruno da Silva (antigo nick iPs DraKiNs)
+//
+//          Acesse meu blog sobre programação www.ips-team.blogspot.com
+//
+//          [iPs]TeaM soluções de programação em geral (agora com cursos)
+//
+//          		www.ips-team.6te.net/smforum (contate-nos)
+//
+//              bIni Files (pós fini 5.0) Versão 1.0 (ultra rápido)
+//
+// [18:21:47] (Slick) executado em 385 ms
+// [18:21:47] (Bruno) executado em 117 ms (min. 3x fast)
+// [18:21:48] (Y_less) executado em 632 ms
+// [18:21:53] (Dini) executado em 6632 ms
+// [18:21:55] (Cini) executado em 2632 ms
+// [18:21:55] (Double) executado em 368 ms
+// [18:21:56] (dFile) executado em 398 ms
+// [18:21:56] (Fini) executado em 364 ms
+//      Executes by 100000 reads/writes
+//
+
+// Funções Atuais:
+
+//   CallBack INI_WriteString("key", "valor")
+//   CallBack INI_WriteFloat("key", valor)
+//   CallBack INI_WriteInt("key", valor)
+
+//   CallBack INI_ReadString("key")
+//   CallBack INI_ReadInt("key")
+//   CallBack INI_ReadFloat("key")
+
+//   CallBack INI_Create()
+//   CallBack INI_Open("arquivo")
+
+//   CallBack INI_Isset("tag")
+//   CallBack INI_Print()
+
+//   CallBack INI_Close()
+//   CallBack INI_Save()
+
+#pragma dynamic 45000 
+#define MAX_LINES		999
+#define MAX_CHARS	256
+
+#define CallBack%0(%1)	stock %0(%1)
+#define Variable%0<%1>      	static stock %0[%1]
+
+#define INI_Isset(%0)			(INI_ReadInt(tagExists) == 0xFF)
+#define strcpy(%0,%1,%2)		strcat((%0[0] = EOS, %0), %1, %2 + 1)
+
+#define INI_ReadInt(%0)		strval(INI_ReadString(%0))
+#define INI_ReadFloat(%0)		floatstr((INI_ReadString(%0))
+
+
+Variable nomeKey		<MAX_LINES>[MAX_CHARS >>> 1];
+Variable valorKey		<MAX_LINES>[MAX_CHARS >>> 1];
+Variable nomeArquivo	<MAX_CHARS / 2>;
+new totalLinhas = 0;
+
+
+//////////////////////////////////////////////////////////////////////////////
+
+CallBack INI_Create(checarArquivo[])
+{
+	if(fexist(checarArquivo)) return false;
+
+	new File:arquivoFopen = fopen(checarArquivo, io_write);
+
+	return fclose(arquivoFopen), true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+static stringTemporariaRetornar[MAX_CHARS / 2] = "255";
+
+CallBack INI_ReadString(keyGet[])
+{
+	new i = -1;
+
+	while((valorKey[++i][0]) && (i != MAX_LINES)) if(!strcmp(nomeKey[i], keyGet, false))
+	{		
+		return valorKey[i];
+	}	
+	return stringTemporariaRetornar;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+
+CallBack INI_Open(arquivoLer[])
+{
+	if((strlen(nomeKey[0]) || strlen(valorKey[0]))) INI_Save(), INI_Close();
+
+	new
+		bufferArquivo[MAX_CHARS],
+
+		linhasArquivo = 0xFFFFFFFF,
+
+		bufferIntArquivo = 0xFFFFFFFF,
+
+		File:arquivoFopen = fopen(arquivoLer, io_read);
+
+
+	format(nomeArquivo, MAX_CHARS >>> 2, arquivoLer);
+
+	while(fread(arquivoFopen, bufferArquivo))
+	{
+
+		bufferIntArquivo = strfind(bufferArquivo, "=", true);
+
+		if(bufferIntArquivo == -1 || bufferIntArquivo > MAX_CHARS) continue;
+		
+		bufferArquivo[strlen(bufferArquivo) - 2]  = '\0';
+
+		format(valorKey[++linhasArquivo], MAX_CHARS >>> 1, bufferArquivo[bufferIntArquivo+1]);
+
+		bufferArquivo[bufferIntArquivo] = EOS;
+
+		format(nomeKey[linhasArquivo], MAX_CHARS >>> 1, bufferArquivo);
+
+	}
+	totalLinhas = linhasArquivo+1;
+
+	return fclose(arquivoFopen), true;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+
+
+CallBack INI_Save()
+{
+	new
+		i = 0,
+		line[MAX_CHARS]
+	;
+
+	new File:arquivoFopen = fopen(nomeArquivo, io_write);
+
+	for( ; i != totalLinhas ; ++i)
+	{	
+		
+		format(line, MAX_CHARS, "%s=%s\r\n", nomeKey[i], valorKey[i]);
+		fwrite(arquivoFopen, line);
+	}
+	return fclose(arquivoFopen);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+CallBack INI_Print()
+{
+	for(new i ; i != totalLinhas ; ++i)
+	{
+		printf("%s=%s",nomeKey[i],valorKey[i]);
+	}
+	return true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+CallBack INI_Close()
+{
+	nomeArquivo[0] = EOS;
+	
+	for(new i; i != totalLinhas ; ++i)
+	{
+		nomeKey[i][0] = EOS;
+		valorKey[i][0] = EOS;
+	}
+	
+	return totalLinhas = 0, true;
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+
+CallBack INI_WriteString(keySet[], valueSet[])
+{
+	new i;
+	for(i = 0;  i != totalLinhas ; ++i) if(!strcmp(nomeKey[i], keySet, false))
+	{
+		return strcpy(valorKey[i], valueSet, MAX_CHARS);		
+	}
+	return strcpy(nomeKey[i], keySet, MAX_CHARS), strcpy(valorKey[i], valueSet, MAX_CHARS), totalLinhas++, true;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+CallBack INI_WriteInt(keySet[], valueSet)
+{
+	static destinoString[20];
+	format(destinoString, sizeof(destinoString), "%i", valueSet);
+	return INI_WriteString(keySet, destinoString);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
+CallBack INI_WriteFloat(const keySet[], valueSet)
+{
+	static destinoString[20];
+	format(destinoString, sizeof(destinoString), "%f", valueSet);
+	
+	return INI_WriteString(keySet, destinoString);
+}

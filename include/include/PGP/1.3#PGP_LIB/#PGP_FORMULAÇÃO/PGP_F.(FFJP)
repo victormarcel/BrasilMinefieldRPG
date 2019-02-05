@@ -1,0 +1,50 @@
+/*
+*
+*	-= PGP FORMULAÇÃO =-
+*	Protioso Gerenciamento de Pickups
+*	Autor: Protioso ([VGS]Protioso_OC)
+*
+*/
+
+public pgp_ChecarJogadores() for(new i=0; i<MAX_PLAYERS; i++) if(IsPlayerConnected(i)) pgp_ChecarPickups(i);
+public pgp_ZerarPickupPega(playerid) if(PegouPickup[playerid] == 1) PegouPickup[playerid] = 0;
+public pgp_ZerarGT(playerid) GTJogador[playerid] = 0;
+stock pgp_JogadorPickup(playerid) return JogadorPickup[playerid];
+stock pgp_JogadorRaio(playerid) return JogadorEmRaio[playerid];
+stock pgp_PickupExiste(pgpid) return (PPickup[pgpid][SPickup] == 0) ? 0 : 1;
+stock pgp_JogadorPickupPega(playerid) return JogadorPickupPega[playerid];
+stock pgp_JogadorEstaEmPickup(playerid) return (pgp_JogadorPickup(playerid) == -1) ? 0 : 1;
+stock pgp_MensagemPickup(pgpid) return PPickup[pgpid][PMSG];
+
+stock pgp_PegouPickup(playerid, pgpid)
+{
+	PegouPickup[playerid] = 1;
+	pgp_JogadorEmPickup(playerid, pgpid);
+	SetTimerEx("pgp_ZerarPickupPega",3000,0,"d",playerid);
+}
+
+stock pgp_JogadorEmRaio(playerid, pgpid)
+{
+	JogadorEmRaio[playerid] = pgpid;
+	if(PPickup[pgpid][SPRaioM] == 1) pgp_PickGameText(pgpid, playerid);
+	pgp_JogadorEntrouEmRaio(playerid, pgpid);
+}
+
+public pgp_RecriarPickup(pgpid)
+{
+	if(PPickup[pgpid][SPickup] == 0 && PPickup[pgpid][SPickupF] == 0 || PPickup[pgpid][SPickup] == 0 && PPickup[pgpid][SPickupF] == 1) return 0;
+	CreatePickup(PPickup[pgpid][PModelo], PPickup[pgpid][PTipo], PPickup[pgpid][pgp_x], PPickup[pgpid][pgp_y], PPickup[pgpid][pgp_z]);
+	return 1;
+}
+
+public pgp_PegarPosicaoPickup(pgpid, &Float:x, &Float:y, &Float:z)
+{
+	if(pgp_PickupExiste(pgpid) == 0) return 0;
+	else
+	{
+    	x = PPickup[pgpid][pgp_x];
+    	y = PPickup[pgpid][pgp_y];
+    	z = PPickup[pgpid][pgp_z];
+    	return 1;
+	}
+}

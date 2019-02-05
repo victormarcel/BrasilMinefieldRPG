@@ -1,0 +1,139 @@
+/*
+*
+*	-= PGP FORMULAÇÃO =-
+*	Protioso Gerenciamento de Pickups
+*	Autor: Protioso ([VGS]Protioso_OC)
+*
+*/
+
+stock pgp_MudarModelo(pgpid, novomodeloid)
+{
+	if(PPickup[pgpid][SPickup] == 0) return 0;
+	pgp_DestruirPickupEx(pgpid);
+	PPickup[pgpid][PModelo] = novomodeloid;
+	SetTimerEx("pgp_RecriarPickup",3500,0,"d",pgpid);
+	return 1;
+}
+
+stock pgp_MudarTipo(pgpid, novotipo)
+{
+	if(PPickup[pgpid][SPickup] == 0) return 0;
+	pgp_DestruirPickupEx(pgpid);
+	PPickup[pgpid][PTipo] = novotipo;
+	SetTimerEx("pgp_RecriarPickup",3500,0,"d",pgpid);
+	return 1;
+}
+
+stock pgp_DesativarPickup(pgpid)
+{
+	if(PPickup[pgpid][SPickup] == 0) return 0;
+	PPickup[pgpid][pgp_x] = 0.0;
+	PPickup[pgpid][pgp_y] = 0.0;
+	PPickup[pgpid][pgp_z] = 0.0;
+	PPickup[pgpid][PRaio] = 0.0;
+	PPickup[pgpid][SPRaio] = 0;
+	PPickup[pgpid][PMSGS] = 0;
+	PPickup[pgpid][SPickup] = 0;
+	PPickup[pgpid][SPickupF] = 0;
+    PPickup[pgpid][EstiloGT] = -1;
+	PPickup[pgpid][SPRaioM] = 0;
+	PPickup[pgpid][PModelo] = 0;
+	PPickup[pgpid][PTipo] = 0;
+	PPickup[pgpid][SPRaio] = 0;
+    PGP_CSTR(PPickup[pgpid][PMSG],"Pickup desativada.");
+    gNumPGP--;
+    if(gNumPGP == 0) gTimerP = 0;
+	return 1;
+}
+
+stock PGP_ChecarTimer()
+{
+	if(gTimerP == 0)
+	{
+        gTimerP = 1;
+		SetTimer("pgp_ChecarJogadores", 1500, 1);
+   		print("[PGP]: Sistema iniciado, criando pickup(s).");
+	}
+}
+
+stock pgp_PickupPGPOn(pgpid)
+{
+	if(PPickup[pgpid][SPickupF] == 2 || PPickup[pgpid][SPickupF] == 0) return 0;
+	return 1;
+}
+
+stock pgp_MudarEstiloGT(pgpid, novoestilo)
+{
+	if(PPickup[pgpid][SPickup] == 0 || PPickup[pgpid][PMSGS] == 0) return 0;
+	if(novoestilo < 0 || novoestilo > 6)
+	{
+   		 printf("[PGP]: Impossivel mudar GameText da pickup id %d!", pgpid, novoestilo);
+		 return 0;
+	}
+	PPickup[pgpid][EstiloGT] = novoestilo;
+	return 1;
+}
+
+stock pgp_MudarMensagem(pgpid, novamensagem[])
+{
+	if(PPickup[pgpid][SPickup] == 0 || PPickup[pgpid][PMSGS] == 0) return 0;
+	new str[256];
+	PGP_CSTR(str,novamensagem);
+	PGP_CSTR(PPickup[pgpid][PMSG],str);
+	return 1;
+}
+
+stock pgp_AdicionarMensagem(pgpid, mensagem[])
+{
+	if(PPickup[pgpid][SPickup] == 0 || PPickup[pgpid][PMSGS] == 1) return 0;
+	new str[256];
+	PGP_CSTR(str,mensagem);
+	PGP_CSTR(PPickup[pgpid][PMSG],str);
+	return 1;
+}
+
+stock pgp_MudarRaio(pgpid, Float:novoraio)
+{
+	if(PPickup[pgpid][SPickup] == 0 || PPickup[pgpid][SPRaio] == 0) return 0;
+	PPickup[pgpid][PRaio] = novoraio;
+	return 1;
+}
+
+stock pgp_AdicionarRaio(pgpid, Float:raio)
+{
+	if(PPickup[pgpid][SPickup] == 0 || PPickup[pgpid][SPRaio] == 1) return 0;
+	PPickup[pgpid][PRaio] = raio;
+	return 1;
+}
+
+stock pgp_PickGameText(pgpid, playerid)
+{
+	new str[256];
+    format(str,sizeof(str),"%s",PPickup[pgpid][PMSG]);
+	GameTextForPlayer(playerid,str, 3000,PPickup[pgpid][EstiloGT]);
+	GTJogador[playerid] = 1;
+	SetTimerEx("pgp_ZerarGT",3000,0,"d",playerid);
+}
+
+stock pgp_JogadorPegaPickup(playerid, pgpid)
+{
+	pgp_DestruirPickupEx(pgpid);
+	JogadorPickupPega[playerid] = pgpid;
+	SetTimerEx("pgp_RecriarPickup",6000,0,"d",pgpid);
+	return 1;
+}
+
+stock pgp_JogadorNaPickup(playerid, pgpid)
+{
+	if(PPickup[pgpid][SPickup] == 0) return 0;
+    return (pgp_JogadorPickup(playerid) == pgpid) ? 1 : 0;
+}
+
+stock pgp_JogadorEmPickupModelo(playerid, pmodeloid)
+{
+	if(pgp_JogadorPickup(playerid) > -1 && PPickup[pgp_JogadorPickup(playerid)][PModelo] == pmodeloid) return 1;
+	return 0;
+}
+
+stock PGP_CSTR(strr[], strb[]) PGP_CSTR_SP(strr, strb, strlen(strb));
+stock pgp_ModeloPickup(pgpid) return (pgp_PickupExiste(pgpid) == 1) ? PPickup[pgpid][PModelo] : 0;

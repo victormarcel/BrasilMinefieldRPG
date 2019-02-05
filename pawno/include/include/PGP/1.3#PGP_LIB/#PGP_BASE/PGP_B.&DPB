@@ -1,0 +1,29 @@
+/*
+*
+*	-= PGP BASE =-
+*	Protioso Gerenciamento de Pickups
+*	Autor: Protioso ([VGS]Protioso_OC)
+*
+*/
+
+#define PGP_CSTR_Z PGP_AC(strr, t, 0);
+//		Variáveis globais
+new gTimerP = 0;
+new gPID = 0;
+new gNumPGP = 0;
+//      Essencial
+forward pgp_ZerarGT(playerid);
+forward JogadorEmPickup(playerid, pgpid);
+forward pgp_CriarPickup(pmodeloid, tipo, Float:x, Float:y, Float:z);
+forward pgp_CriarPickupEx(pmodeloid, tipo, Float:x, Float:y, Float:z, mensagem[], estilogametext);
+forward pgp_CriarPickupR(pmodeloid, tipo, Float:x, Float:y, Float:z, Float:raio);
+forward pgp_CriarPickupREx(pmodeloid, tipo, Float:x, Float:y, Float:z, Float: raio, mensagem[], estilogametext);
+forward pgp_ChecarJogadores();
+forward pgp_PegarPosicaoPickup(pgpid, &Float:x, &Float:y, &Float:z);
+forward pgp_JogadorEstaEmPickup(playerid);
+forward pgp_DestruirPickup(pgpid);
+forward pgp_DestruirPickupEx(pgpid);
+forward pgp_ZerarPickupPega(playerid);
+forward pgp_RecriarPickup(pgpid);
+forward pgp_JogadorEmPickup(playerid, pgpid);
+forward pgp_JogadorEntrouEmRaio(playerid, pgpid);
