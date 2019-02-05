@@ -1,0 +1,33 @@
+/*
+*
+*	-= PGP BASE =-
+*	Protioso Gerenciamento de Pickups
+*	Autor: Protioso ([VGS]Protioso_OC)
+*
+*/
+
+//		Pickup's
+enum spick
+{
+	Float:pgp_x,
+	Float:pgp_y,
+	Float:pgp_z,
+	Float:PRaio,
+	SPRaio,
+	SPRaioM,
+	PModelo,
+ 	PTipo,
+	PMSG[256],
+	PMSGS,
+	EstiloGT,
+	SPickup,
+	SPickupF,
+};
+new PPickup[MAX_PGP][spick];
+
+//      Jogadores
+new PegouPickup[MAX_PLAYERS];
+new JogadorPickup[MAX_PLAYERS] = -1;
+new JogadorPickupPega[MAX_PLAYERS] = -1;
+new JogadorEmRaio[MAX_PLAYERS] = -1;
+new GTJogador[MAX_PLAYERS] = 0;

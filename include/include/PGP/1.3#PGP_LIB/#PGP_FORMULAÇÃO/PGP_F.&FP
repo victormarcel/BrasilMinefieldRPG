@@ -1,0 +1,148 @@
+/*
+*
+*	-= PGP FORMULAÇÃO =-
+*	Protioso Gerenciamento de Pickups
+*	Autor: Protioso ([VGS]Protioso_OC)
+*
+*/
+
+public pgp_CriarPickup(pmodeloid, tipo, Float:x, Float:y, Float:z)
+{
+	if(gPID + 1 >= MAX_PGP)
+	{
+   		 printf("[PGP]: Impossivel criar pickup id %d! Limite maximo exedido (%d).", gPID, MAX_PGP);
+		 return 0;
+	}
+	new ida;
+	ida = CreatePickup(pmodeloid, tipo, x, y, z);
+	gPID = ida;
+	PPickup[gPID][pgp_x] = x;
+	PPickup[gPID][pgp_y] = y;
+	PPickup[gPID][pgp_z] = z;
+	PPickup[gPID][PModelo] = pmodeloid;
+	PPickup[gPID][PTipo] = tipo;
+	PPickup[gPID][PMSGS] = 0;
+	PPickup[gPID][SPRaio] = 0;
+	PPickup[gPID][SPickup] = 1;
+	PPickup[gPID][SPickupF] = 1;
+    gNumPGP++;
+	PGP_ChecarTimer();
+	return gPID;
+}
+
+public pgp_CriarPickupEx(pmodeloid, tipo, Float:x, Float:y, Float:z, mensagem[], estilogametext)
+{
+	if(gPID + 1 >= MAX_PGP)
+	{
+   		 printf("[PGP]: Impossivel criar pickup id %d! Limite maximo exedido (%d).", gPID, MAX_PGP);
+		 return 0;
+	}
+	if(estilogametext < 0 || estilogametext > 6)
+	{
+   		 printf("[PGP]: Impossivel criar pickup id %d! Estilo de GameText invalido (%d). Use de 0 a 6.", gPID, estilogametext);
+		 return 0;
+	}
+	new ida;
+	ida = CreatePickup(pmodeloid, tipo, x, y, z);
+	gPID = ida;
+	PPickup[gPID][pgp_x] = x;
+	PPickup[gPID][pgp_y] = y;
+	PPickup[gPID][pgp_z] = z;
+	PPickup[gPID][PModelo] = pmodeloid;
+	PPickup[gPID][PTipo] = tipo;
+	PPickup[gPID][PMSGS] = 1;
+	PPickup[gPID][SPRaio] = 0;
+	PPickup[gPID][SPickup] = 1;
+	PPickup[gPID][SPickupF] = 1;
+	PPickup[gPID][EstiloGT] = estilogametext;
+	PGP_CSTR(PPickup[gPID][PMSG], mensagem);
+    gNumPGP++;
+	PGP_ChecarTimer();
+	return gPID;
+}
+
+public pgp_CriarPickupR(pmodeloid, tipo, Float:x, Float:y, Float:z, Float:raio)
+{
+	if(gPID + 1 >= MAX_PGP)
+	{
+   		 printf("[PGP]: Impossivel criar pickup id %d! Limite maximo exedido (%d).", gPID, MAX_PGP);
+		 return 0;
+	}
+	new ida;
+	ida = CreatePickup(pmodeloid, tipo, x, y, z);
+	gPID = ida;
+	PPickup[gPID][pgp_x] = x;
+	PPickup[gPID][pgp_y] = y;
+	PPickup[gPID][pgp_z] = z;
+	PPickup[gPID][PRaio] = raio;
+	PPickup[gPID][SPRaioM] = 0;
+	PPickup[gPID][PModelo] = pmodeloid;
+	PPickup[gPID][PTipo] = tipo;
+	PPickup[gPID][PMSGS] = 0;
+	PPickup[gPID][SPRaio] = 1;
+	PPickup[gPID][SPickup] = 1;
+	PPickup[gPID][SPickupF] = 1;
+    gNumPGP++;
+	PGP_ChecarTimer();
+	return gPID;
+}
+
+public pgp_CriarPickupREx(pmodeloid, tipo, Float:x, Float:y, Float:z, Float: raio, mensagem[], estilogametext)
+{
+	if(gPID + 1 >= MAX_PGP)
+	{
+   		 printf("[PGP]: Impossivel criar pickup id %d! Limite maximo exedido (%d).", gPID, MAX_PGP);
+		 return 0;
+	}
+	if(estilogametext < 0 || estilogametext > 6)
+	{
+   		 printf("[PGP]: Impossivel criar pickup id %d! Estilo de GameText invalido (%d). Use de 0 a 6.", gPID, estilogametext);
+		 return 0;
+	}
+	new ida;
+	ida = CreatePickup(pmodeloid, tipo, x, y, z);
+	gPID = ida;
+	PPickup[gPID][pgp_x] = x;
+	PPickup[gPID][pgp_y] = y;
+	PPickup[gPID][pgp_z] = z;
+	PPickup[gPID][PRaio] = raio;
+	PPickup[gPID][SPRaioM] = 1;
+	PPickup[gPID][PModelo] = pmodeloid;
+	PPickup[gPID][PTipo] = tipo;
+	PPickup[gPID][PMSGS] = 0;
+	PPickup[gPID][SPRaio] = 1;
+	PPickup[gPID][SPickup] = 1;
+	PPickup[gPID][SPickupF] = 1;
+	PPickup[gPID][EstiloGT] = estilogametext;
+	PGP_CSTR(PPickup[gPID][PMSG], mensagem);
+    gNumPGP++;
+	PGP_ChecarTimer();
+	return gPID;
+}
+
+public pgp_DestruirPickupEx(pgpid)
+{
+	if(PPickup[pgpid][SPickup] == 0) return 0;
+	DestroyPickup(pgpid);
+	PPickup[pgpid][SPickupF] = 2;
+	return 1;
+}
+
+public pgp_DestruirPickup(pgpid)
+{
+	if(pgp_DesativarPickup(pgpid) == 1)
+	{
+		DestroyPickup(pgpid);
+		for(new i; i<MAX_PLAYERS; i++)
+		{
+			if(IsPlayerConnected(i))
+			{
+				if(JogadorPickup[i] == pgpid) JogadorPickup[i] = -1;
+				if(JogadorPickupPega[i] == pgpid) JogadorPickupPega[i] = -1;
+				if(JogadorEmRaio[i] == pgpid) JogadorEmRaio[i] = -1;
+			}
+		}
+		return 1;
+	}
+	return 0;
+}

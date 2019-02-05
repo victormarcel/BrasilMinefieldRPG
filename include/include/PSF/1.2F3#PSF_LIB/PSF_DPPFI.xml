@@ -1,0 +1,1711 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet href="file:///C|/Documents and Settings/Fontes/Desktop/Jogos/GTA San Andreas/Serves/Serve Stunts/pawno/xml/pawndoc.xsl" type="text/xsl"?>
+<doc source="C:\Documents and Settings\Fontes\Desktop\Jogos\GTA San Andreas\Serves\Serve Stunts\pawno\include\PSF\1.2F3#PSF_LIB\PSF_DPPFI.inc">
+	<assembly>
+		<name>PSF_DPPFI.inc</name>
+	</assembly>
+	<members>
+
+		<!-- enumerations -->
+
+		<!-- constants -->
+		<member name="C:cellmax" value="2147483647">
+			<referrer name="operator!(Float:)"/>
+		</member>
+		<member name="C:cellmin" value="-2147483648">
+			<referrer name="operator-(Float:)"/>
+		</member>
+		<member name="C:false" value="0">
+			<tagname value="bool"/>
+			<referrer name="psf_ParteExiste"/>
+			<referrer name="psf_PegarValorEntreCharBool"/>
+			<referrer name="psf_PegarValorBool"/>
+			<referrer name="psf_CharFiltrado"/>
+			<referrer name="psf_SubstituirChar"/>
+			<referrer name="psf_ContagemChar"/>
+			<referrer name="psf_PosChar"/>
+			<referrer name="psf_RegraDupla"/>
+			<referrer name="psf_PCODSubstituirChar"/>
+			<referrer name="psf_SubstituirCharC"/>
+			<referrer name="psf_FormatarStrTexto"/>
+		</member>
+		<member name="C:true" value="1">
+			<tagname value="bool"/>
+			<referrer name="psf_PegarValorEntreCharBool"/>
+			<referrer name="psf_PegarValorBool"/>
+			<referrer name="psf_CharFiltrado"/>
+			<referrer name="psf_SubstituirChar"/>
+			<referrer name="psf_ContagemChar"/>
+			<referrer name="psf_PosChar"/>
+			<referrer name="psf_PCODSubstituirChar"/>
+			<referrer name="psf_dC"/>
+			<referrer name="psf_SubstituirCharC"/>
+		</member>
+
+		<!-- variables -->
+		<member name="F:FiltroB">
+			<referrer name="psf_FormatarStr"/>
+			<referrer name="psf_Filtrar"/>
+			<referrer name="psf_ReverterFiltro"/>
+		</member>
+		<member name="F:FiltroF">
+			<referrer name="psf_CharFiltrado"/>
+			<referrer name="psf_FormatarStr"/>
+			<referrer name="psf_Filtrar"/>
+			<referrer name="psf_ReverterFiltro"/>
+		</member>
+		<member name="F:TfF">
+			<referrer name="psf_FormatarStrTexto"/>
+		</member>
+		<member name="F:TfN">
+			<referrer name="psf_FormatarStrTexto"/>
+		</member>
+		<member name="F:sapMa">
+			<referrer name="psf_dC"/>
+		</member>
+		<member name="F:sapMi">
+			<referrer name="psf_dC"/>
+		</member>
+
+		<!-- functions -->
+		<member name="M:operator!(Float:)" syntax="operator!(Float:)(oper)">
+			<tagname value="bool"/>
+			<stacksize value="1"/>
+			<dependency name="cellmax"/>
+			<param name="oper">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:operator%(_:,Float:)" syntax="operator%(_:,Float:)(oper1, oper2)">
+			<stacksize value="1"/>
+			<param name="oper1">
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:operator%(Float:,_:)" syntax="operator%(Float:,_:)(oper1, oper2)">
+			<stacksize value="1"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+		</member>
+		<member name="M:operator%(Float:,Float:)" syntax="operator%(Float:,Float:)(oper1, oper2)">
+			<stacksize value="1"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:operator!=(Float:,_:)" syntax="operator!=(Float:,_:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+		</member>
+		<member name="M:operator!=(Float:,Float:)" syntax="operator!=(Float:,Float:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:operator-(_:,Float:)" syntax="operator-(_:,Float:)(oper1, oper2)">
+			<tagname value="Float"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatsub"/>
+			<param name="oper1">
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:operator-(Float:,_:)" syntax="operator-(Float:,_:)(oper1, oper2)">
+			<tagname value="Float"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatsub"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+		</member>
+		<member name="M:operator+(Float:,_:)" syntax="operator+(Float:,_:)(oper1, oper2)">
+			<tagname value="Float"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatadd"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+		</member>
+		<member name="M:operator/(_:,Float:)" syntax="operator/(_:,Float:)(oper1, oper2)">
+			<tagname value="Float"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatdiv"/>
+			<param name="oper1">
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:operator/(Float:,_:)" syntax="operator/(Float:,_:)(oper1, oper2)">
+			<tagname value="Float"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatdiv"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+		</member>
+		<member name="M:operator*(Float:,_:)" syntax="operator*(Float:,_:)(oper1, oper2)">
+			<tagname value="Float"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatmul"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+		</member>
+		<member name="M:operator++(Float:)" syntax="operator++(Float:)(oper)">
+			<tagname value="Float"/>
+			<stacksize value="1"/>
+			<dependency name="operator+(Float:,Float:)"/>
+			<param name="oper">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:operator-(Float:)" syntax="operator-(Float:)(oper)">
+			<tagname value="Float"/>
+			<stacksize value="1"/>
+			<dependency name="cellmin"/>
+			<param name="oper">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:operator--(Float:)" syntax="operator--(Float:)(oper)">
+			<tagname value="Float"/>
+			<stacksize value="1"/>
+			<dependency name="operator-(Float:,Float:)"/>
+			<param name="oper">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:operator-(Float:,Float:)" syntax="operator-(Float:,Float:)(oper1, oper2)">
+			<tagname value="Float"/>
+			<attribute name="native"/>
+			<referrer name="operator--(Float:)"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:operator+(Float:,Float:)" syntax="operator+(Float:,Float:)(oper1, oper2)">
+			<tagname value="Float"/>
+			<attribute name="native"/>
+			<referrer name="operator++(Float:)"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:operator==(Float:,Float:)" syntax="operator==(Float:,Float:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:operator==(Float:,_:)" syntax="operator==(Float:,_:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+		</member>
+		<member name="M:operator&gt;(Float:,Float:)" syntax="operator&gt;(Float:,Float:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:operator&gt;(Float:,_:)" syntax="operator&gt;(Float:,_:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+		</member>
+		<member name="M:operator&gt;(_:,Float:)" syntax="operator&gt;(_:,Float:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:operator&gt;=(Float:,Float:)" syntax="operator&gt;=(Float:,Float:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:operator&gt;=(Float:,_:)" syntax="operator&gt;=(Float:,_:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+		</member>
+		<member name="M:operator&gt;=(_:,Float:)" syntax="operator&gt;=(_:,Float:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:operator&lt;(Float:,Float:)" syntax="operator&lt;(Float:,Float:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:operator&lt;(Float:,_:)" syntax="operator&lt;(Float:,_:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+		</member>
+		<member name="M:operator&lt;(_:,Float:)" syntax="operator&lt;(_:,Float:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:operator&lt;=(Float:,Float:)" syntax="operator&lt;=(Float:,Float:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:operator&lt;=(Float:,_:)" syntax="operator&lt;=(Float:,_:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+			</param>
+		</member>
+		<member name="M:operator&lt;=(_:,Float:)" syntax="operator&lt;=(_:,Float:)(oper1, oper2)">
+			<tagname value="bool"/>
+			<stacksize value="4"/>
+			<dependency name="float"/>
+			<dependency name="floatcmp"/>
+			<param name="oper1">
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:@receivepacket" syntax="@receivepacket(packet[], size, source[])">
+			<attribute name="public"/>
+			<stacksize value="1"/>
+			<param name="packet">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="size">
+			</param>
+			<param name="source">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:@receivestring" syntax="@receivestring(message[], source[])">
+			<attribute name="public"/>
+			<stacksize value="1"/>
+			<param name="message">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="source">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:OnDialogResponse" syntax="OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="dialogid">
+			</param>
+			<param name="response">
+			</param>
+			<param name="listitem">
+			</param>
+			<param name="inputtext">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:OnEnterExitModShop" syntax="OnEnterExitModShop(playerid, enterexit, interiorid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="enterexit">
+			</param>
+			<param name="interiorid">
+			</param>
+		</member>
+		<member name="M:OnFilterScriptExit" syntax="OnFilterScriptExit()">
+			<stacksize value="1"/>
+		</member>
+		<member name="M:OnFilterScriptInit" syntax="OnFilterScriptInit()">
+			<stacksize value="1"/>
+		</member>
+		<member name="M:OnGameModeExit" syntax="OnGameModeExit()">
+			<stacksize value="1"/>
+		</member>
+		<member name="M:OnGameModeInit" syntax="OnGameModeInit()">
+			<stacksize value="1"/>
+		</member>
+		<member name="M:OnObjectMoved" syntax="OnObjectMoved(objectid)">
+			<stacksize value="1"/>
+			<param name="objectid">
+			</param>
+		</member>
+		<member name="M:OnPlayerClickPlayer" syntax="OnPlayerClickPlayer(playerid, clickedplayerid, source)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="clickedplayerid">
+			</param>
+			<param name="source">
+			</param>
+		</member>
+		<member name="M:OnPlayerCommandText" syntax="OnPlayerCommandText(playerid, cmdtext[])">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="cmdtext">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:OnPlayerConnect" syntax="OnPlayerConnect(playerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:OnPlayerDeath" syntax="OnPlayerDeath(playerid, killerid, reason)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="killerid">
+			</param>
+			<param name="reason">
+			</param>
+		</member>
+		<member name="M:OnPlayerDisconnect" syntax="OnPlayerDisconnect(playerid, reason)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="reason">
+			</param>
+		</member>
+		<member name="M:OnPlayerEnterCheckpoint" syntax="OnPlayerEnterCheckpoint(playerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:OnPlayerEnterRaceCheckpoint" syntax="OnPlayerEnterRaceCheckpoint(playerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:OnPlayerEnterVehicle" syntax="OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="vehicleid">
+			</param>
+			<param name="ispassenger">
+			</param>
+		</member>
+		<member name="M:OnPlayerExitVehicle" syntax="OnPlayerExitVehicle(playerid, vehicleid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="vehicleid">
+			</param>
+		</member>
+		<member name="M:OnPlayerExitedMenu" syntax="OnPlayerExitedMenu(playerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:OnPlayerInteriorChange" syntax="OnPlayerInteriorChange(playerid, newinteriorid, oldinteriorid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="newinteriorid">
+			</param>
+			<param name="oldinteriorid">
+			</param>
+		</member>
+		<member name="M:OnPlayerKeyStateChange" syntax="OnPlayerKeyStateChange(playerid, newkeys, oldkeys)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="newkeys">
+			</param>
+			<param name="oldkeys">
+			</param>
+		</member>
+		<member name="M:OnPlayerLeaveCheckpoint" syntax="OnPlayerLeaveCheckpoint(playerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:OnPlayerLeaveRaceCheckpoint" syntax="OnPlayerLeaveRaceCheckpoint(playerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:OnPlayerObjectMoved" syntax="OnPlayerObjectMoved(playerid, objectid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="objectid">
+			</param>
+		</member>
+		<member name="M:OnPlayerPickUpPickup" syntax="OnPlayerPickUpPickup(playerid, pickupid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="pickupid">
+			</param>
+		</member>
+		<member name="M:OnPlayerRequestClass" syntax="OnPlayerRequestClass(playerid, classid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="classid">
+			</param>
+		</member>
+		<member name="M:OnPlayerRequestSpawn" syntax="OnPlayerRequestSpawn(playerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:OnPlayerSelectedMenuRow" syntax="OnPlayerSelectedMenuRow(playerid, row)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="row">
+			</param>
+		</member>
+		<member name="M:OnPlayerSpawn" syntax="OnPlayerSpawn(playerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:OnPlayerStateChange" syntax="OnPlayerStateChange(playerid, newstate, oldstate)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="newstate">
+			</param>
+			<param name="oldstate">
+			</param>
+		</member>
+		<member name="M:OnPlayerStreamIn" syntax="OnPlayerStreamIn(playerid, forplayerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="forplayerid">
+			</param>
+		</member>
+		<member name="M:OnPlayerStreamOut" syntax="OnPlayerStreamOut(playerid, forplayerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="forplayerid">
+			</param>
+		</member>
+		<member name="M:OnPlayerText" syntax="OnPlayerText(playerid, text[])">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="text">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:OnPlayerUpdate" syntax="OnPlayerUpdate(playerid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:OnRconCommand" syntax="OnRconCommand(cmd[])">
+			<stacksize value="1"/>
+			<param name="cmd">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:OnRconLoginAttempt" syntax="OnRconLoginAttempt(ip[], password[], success)">
+			<stacksize value="1"/>
+			<param name="ip">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="password">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="success">
+			</param>
+		</member>
+		<member name="M:OnVehicleDeath" syntax="OnVehicleDeath(vehicleid, killerid)">
+			<stacksize value="1"/>
+			<param name="vehicleid">
+			</param>
+			<param name="killerid">
+			</param>
+		</member>
+		<member name="M:OnVehicleMod" syntax="OnVehicleMod(playerid, vehicleid, componentid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="vehicleid">
+			</param>
+			<param name="componentid">
+			</param>
+		</member>
+		<member name="M:OnVehiclePaintjob" syntax="OnVehiclePaintjob(playerid, vehicleid, paintjobid)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="vehicleid">
+			</param>
+			<param name="paintjobid">
+			</param>
+		</member>
+		<member name="M:OnVehicleRespray" syntax="OnVehicleRespray(playerid, vehicleid, color1, color2)">
+			<stacksize value="1"/>
+			<param name="playerid">
+			</param>
+			<param name="vehicleid">
+			</param>
+			<param name="color1">
+			</param>
+			<param name="color2">
+			</param>
+		</member>
+		<member name="M:OnVehicleSpawn" syntax="OnVehicleSpawn(vehicleid)">
+			<stacksize value="1"/>
+			<param name="vehicleid">
+			</param>
+		</member>
+		<member name="M:OnVehicleStreamIn" syntax="OnVehicleStreamIn(vehicleid, forplayerid)">
+			<stacksize value="1"/>
+			<param name="vehicleid">
+			</param>
+			<param name="forplayerid">
+			</param>
+		</member>
+		<member name="M:OnVehicleStreamOut" syntax="OnVehicleStreamOut(vehicleid, forplayerid)">
+			<stacksize value="1"/>
+			<param name="vehicleid">
+			</param>
+			<param name="forplayerid">
+			</param>
+		</member>
+		<member name="M:float" syntax="float(value)">
+			<tagname value="Float"/>
+			<attribute name="native"/>
+			<referrer name="operator*(Float:,_:)"/>
+			<referrer name="operator/(Float:,_:)"/>
+			<referrer name="operator/(_:,Float:)"/>
+			<referrer name="operator+(Float:,_:)"/>
+			<referrer name="operator-(Float:,_:)"/>
+			<referrer name="operator-(_:,Float:)"/>
+			<referrer name="operator==(Float:,_:)"/>
+			<referrer name="operator!=(Float:,_:)"/>
+			<referrer name="operator&gt;(Float:,_:)"/>
+			<referrer name="operator&gt;(_:,Float:)"/>
+			<referrer name="operator&gt;=(Float:,_:)"/>
+			<referrer name="operator&gt;=(_:,Float:)"/>
+			<referrer name="operator&lt;(Float:,_:)"/>
+			<referrer name="operator&lt;(_:,Float:)"/>
+			<referrer name="operator&lt;=(Float:,_:)"/>
+			<referrer name="operator&lt;=(_:,Float:)"/>
+			<param name="value">
+			</param>
+		</member>
+		<member name="M:floatadd" syntax="floatadd(oper1, oper2)">
+			<tagname value="Float"/>
+			<attribute name="native"/>
+			<referrer name="operator+(Float:,_:)"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:floatcmp" syntax="floatcmp(oper1, oper2)">
+			<attribute name="native"/>
+			<referrer name="operator==(Float:,Float:)"/>
+			<referrer name="operator==(Float:,_:)"/>
+			<referrer name="operator!=(Float:,Float:)"/>
+			<referrer name="operator!=(Float:,_:)"/>
+			<referrer name="operator&gt;(Float:,Float:)"/>
+			<referrer name="operator&gt;(Float:,_:)"/>
+			<referrer name="operator&gt;(_:,Float:)"/>
+			<referrer name="operator&gt;=(Float:,Float:)"/>
+			<referrer name="operator&gt;=(Float:,_:)"/>
+			<referrer name="operator&gt;=(_:,Float:)"/>
+			<referrer name="operator&lt;(Float:,Float:)"/>
+			<referrer name="operator&lt;(Float:,_:)"/>
+			<referrer name="operator&lt;(_:,Float:)"/>
+			<referrer name="operator&lt;=(Float:,Float:)"/>
+			<referrer name="operator&lt;=(Float:,_:)"/>
+			<referrer name="operator&lt;=(_:,Float:)"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:floatdiv" syntax="floatdiv(dividend, divisor)">
+			<tagname value="Float"/>
+			<attribute name="native"/>
+			<referrer name="operator/(Float:,_:)"/>
+			<referrer name="operator/(_:,Float:)"/>
+			<param name="dividend">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="divisor">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:floatmul" syntax="floatmul(oper1, oper2)">
+			<tagname value="Float"/>
+			<attribute name="native"/>
+			<referrer name="operator*(Float:,_:)"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:floatstr" syntax="floatstr(string[])">
+			<tagname value="Float"/>
+			<attribute name="native"/>
+			<referrer name="psf_PegarValorEntreCharFloat"/>
+			<referrer name="psf_PegarValorFloat"/>
+			<param name="string">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:floatsub" syntax="floatsub(oper1, oper2)">
+			<tagname value="Float"/>
+			<attribute name="native"/>
+			<referrer name="operator-(Float:,_:)"/>
+			<referrer name="operator-(_:,Float:)"/>
+			<param name="oper1">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="oper2">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:format" syntax="format(output[], len, format[], ...)">
+			<attribute name="native"/>
+			<referrer name="psf_CharStr"/>
+			<referrer name="psf_FloatStr"/>
+			<referrer name="psf_IntStr"/>
+			<param name="output">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="len">
+			</param>
+			<param name="format">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="...">
+				<paraminfo> {Float,_} </paraminfo>
+			</param>
+		</member>
+		<member name="M:pse_cZ" syntax="pse_cZ(&amp;c)">
+			<stacksize value="5"/>
+			<referrer name="psf_mN"/>
+			<dependency name="psf_adT"/>
+			<param name="c">
+				<paraminfo> &amp; </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_AC" syntax="psf_AC(str[], l, c)">
+			<stacksize value="1"/>
+			<referrer name="psf_CSTR_SP"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="l">
+			</param>
+			<param name="c">
+			</param>
+		</member>
+		<member name="M:psf_AdF" syntax="psf_AdF(str[], qad)">
+			<stacksize value="9"/>
+			<referrer name="psf_FormatarStr"/>
+			<dependency name="psf_CharStr"/>
+			<dependency name="psf_MaCA"/>
+			<dependency name="strins"/>
+			<dependency name="strlen"/>
+			<param name="str">
+				<paraminfo> [256] </paraminfo>
+			</param>
+			<param name="qad">
+			</param>
+		</member>
+		<member name="M:psf_CSTR_SP" syntax="psf_CSTR_SP(strr[], strb[], t)">
+			<stacksize value="7"/>
+			<referrer name="psf_CopiarStr"/>
+			<dependency name="psf_AC"/>
+			<param name="strr">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="strb">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="t">
+			</param>
+		</member>
+		<member name="M:psf_CharFiltrado" syntax="psf_CharFiltrado(c[])">
+			<stacksize value="8"/>
+			<dependency name="FiltroF"/>
+			<dependency name="false"/>
+			<dependency name="strcmp"/>
+			<dependency name="true"/>
+			<param name="c">
+				<paraminfo> [3] </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_CharStr" syntax="psf_CharStr(c)">
+			<stacksize value="8"/>
+			<referrer name="psf_RegraDupla"/>
+			<referrer name="psf_AdF"/>
+			<referrer name="psf_RegraTripla"/>
+			<referrer name="psf_PCODNumero"/>
+			<dependency name="format"/>
+			<dependency name="psf_CharStr"/>
+			<param name="c">
+			</param>
+		</member>
+		<member name="M:psf_ContagemChar" syntax="psf_ContagemChar(str[], cC[], ler_case_sensitive)">
+			<stacksize value="521"/>
+			<referrer name="psf_strtokCL"/>
+			<dependency name="false"/>
+			<dependency name="psf_CopiarStr"/>
+			<dependency name="psf_aCP"/>
+			<dependency name="strdel"/>
+			<dependency name="strfind"/>
+			<dependency name="strins"/>
+			<dependency name="strlen"/>
+			<dependency name="true"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="cC">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="ler_case_sensitive">
+				<paraminfo>bool </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_CopiarStr" syntax="psf_CopiarStr(str_recebe[], str_origem[])">
+			<stacksize value="6"/>
+			<referrer name="psf_aCP"/>
+			<referrer name="psf_PegarValorEntreCharStr"/>
+			<referrer name="psf_PegarValorStr"/>
+			<referrer name="psf_SubstituirChar"/>
+			<referrer name="psf_ContagemChar"/>
+			<referrer name="psf_PosChar"/>
+			<referrer name="psf_RegraDupla"/>
+			<referrer name="psf_PCODSubstituirChar"/>
+			<referrer name="psf_SubstituirCharC"/>
+			<dependency name="psf_CSTR_SP"/>
+			<dependency name="strlen"/>
+			<param name="str_recebe">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="str_origem">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_CopiarStrL" syntax="psf_CopiarStrL(str_recebe[], str_origem[], pos_inicial_origem, pos_final_origem)">
+			<stacksize value="2"/>
+			<referrer name="psf_strtokCI"/>
+			<referrer name="psf_strtokCL"/>
+			<referrer name="psf_strtok"/>
+			<referrer name="psf_RegraQuarta"/>
+			<param name="str_recebe">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="str_origem">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="pos_inicial_origem">
+			</param>
+			<param name="pos_final_origem">
+			</param>
+		</member>
+		<member name="M:psf_DuplarStr" syntax="psf_DuplarStr(str[])">
+			<stacksize value="521"/>
+			<dependency name="psf_DuplarStr"/>
+			<dependency name="psf_MaCA"/>
+			<dependency name="psf_RegraDupla"/>
+			<dependency name="strcat"/>
+			<dependency name="strlen"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_Filtrar" syntax="psf_Filtrar(str[])">
+			<stacksize value="522"/>
+			<dependency name="FiltroB"/>
+			<dependency name="FiltroF"/>
+			<dependency name="psf_Filtrar"/>
+			<dependency name="psf_ParteExiste"/>
+			<dependency name="psf_SubstituirChar"/>
+			<dependency name="strcat"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_FloatStr" syntax="psf_FloatStr(f)">
+			<stacksize value="28"/>
+			<dependency name="format"/>
+			<dependency name="psf_FloatStr"/>
+			<param name="f">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_FormatarStr" syntax="psf_FormatarStr(str[], tf)">
+			<stacksize value="522"/>
+			<dependency name="FiltroB"/>
+			<dependency name="FiltroF"/>
+			<dependency name="psf_AdF"/>
+			<dependency name="psf_FormatarStr"/>
+			<dependency name="psf_FormularaCa"/>
+			<dependency name="psf_FormularnCa"/>
+			<dependency name="psf_InverterStr_PCOD"/>
+			<dependency name="psf_PCODSubstituirChar"/>
+			<dependency name="psf_ParteExiste"/>
+			<dependency name="psf_RegraQuarta"/>
+			<dependency name="psf_RegraTripla"/>
+			<dependency name="psf_adT"/>
+			<dependency name="psf_iFStr"/>
+			<dependency name="psf_tO"/>
+			<dependency name="strcat"/>
+			<dependency name="strlen"/>
+			<param name="str">
+				<paraminfo> [256] </paraminfo>
+			</param>
+			<param name="tf">
+			</param>
+		</member>
+		<member name="M:psf_FormatarStrTexto" syntax="psf_FormatarStrTexto(str[])">
+			<stacksize value="522"/>
+			<dependency name="TfF"/>
+			<dependency name="TfN"/>
+			<dependency name="false"/>
+			<dependency name="psf_FormatarStrTexto"/>
+			<dependency name="psf_ParteExiste"/>
+			<dependency name="psf_SubstituirChar"/>
+			<dependency name="strcat"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_FormatoStr" syntax="psf_FormatoStr(str[], tf)">
+			<stacksize value="5"/>
+			<referrer name="psf_iFStr"/>
+			<dependency name="strlen"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="tf">
+			</param>
+		</member>
+		<member name="M:psf_FormularaCa" syntax="psf_FormularaCa(&amp;c)">
+			<stacksize value="4"/>
+			<referrer name="psf_adT"/>
+			<referrer name="psf_aCAF"/>
+			<referrer name="psf_FormatarStr"/>
+			<dependency name="psf_aCA"/>
+			<param name="c">
+				<paraminfo> &amp; </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_FormularnCa" syntax="psf_FormularnCa(&amp;c)">
+			<stacksize value="4"/>
+			<referrer name="psf_adT"/>
+			<referrer name="psf_FormatarStr"/>
+			<referrer name="psf_mN"/>
+			<dependency name="psf_nCA"/>
+			<param name="c">
+				<paraminfo> &amp; </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_IntStr" syntax="psf_IntStr(i)">
+			<stacksize value="70"/>
+			<referrer name="psf_PCODNumero"/>
+			<dependency name="format"/>
+			<dependency name="psf_IntStr"/>
+			<param name="i">
+			</param>
+		</member>
+		<member name="M:psf_InverterStr" syntax="psf_InverterStr(str[])">
+			<stacksize value="266"/>
+			<dependency name="psf_InverterStr"/>
+			<dependency name="strins"/>
+			<dependency name="strlen"/>
+			<param name="str">
+				<paraminfo> [256] </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_InverterStr_PCOD" syntax="psf_InverterStr_PCOD(str[])">
+			<stacksize value="266"/>
+			<referrer name="psf_RegraQuarta"/>
+			<referrer name="psf_FormatarStr"/>
+			<dependency name="psf_InverterStr_PCOD"/>
+			<dependency name="strins"/>
+			<dependency name="strlen"/>
+			<param name="str">
+				<paraminfo> [256] </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_LimparStr" syntax="psf_LimparStr(str[])">
+			<stacksize value="5"/>
+			<dependency name="strlen"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_MaCA" syntax="psf_MaCA(c, v)">
+			<stacksize value="6"/>
+			<referrer name="psf_AdF"/>
+			<referrer name="psf_RegraTripla"/>
+			<referrer name="psf_DuplarStr"/>
+			<dependency name="psf_adT"/>
+			<param name="c">
+			</param>
+			<param name="v">
+			</param>
+		</member>
+		<member name="M:psf_PCODNumero" syntax="psf_PCODNumero(numeral)">
+			<stacksize value="134"/>
+			<dependency name="psf_CharStr"/>
+			<dependency name="psf_IntStr"/>
+			<dependency name="psf_adT"/>
+			<dependency name="psf_mN"/>
+			<dependency name="strins"/>
+			<dependency name="strlen"/>
+			<dependency name="strval"/>
+			<param name="numeral">
+			</param>
+		</member>
+		<member name="M:psf_PCODSubstituirChar" syntax="psf_PCODSubstituirChar(str[], cs[], ct[], ler_case_sensitive)">
+			<stacksize value="264"/>
+			<referrer name="psf_FormatarStr"/>
+			<dependency name="false"/>
+			<dependency name="psf_CopiarStr"/>
+			<dependency name="psf_PCODSubstituirChar"/>
+			<dependency name="strdel"/>
+			<dependency name="strfind"/>
+			<dependency name="strins"/>
+			<dependency name="strlen"/>
+			<dependency name="true"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="cs">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="ct">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="ler_case_sensitive">
+				<paraminfo>bool </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_ParteExiste" syntax="psf_ParteExiste(str[], parte[])">
+			<stacksize value="6"/>
+			<referrer name="psf_dC"/>
+			<referrer name="psf_FormatarStr"/>
+			<referrer name="psf_Filtrar"/>
+			<referrer name="psf_ReverterFiltro"/>
+			<referrer name="psf_FormatarStrTexto"/>
+			<dependency name="false"/>
+			<dependency name="strfind"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="parte">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_PegarValorBool" syntax="psf_PegarValorBool(str[], pos_inicial, pos_final)">
+			<stacksize value="263"/>
+			<dependency name="false"/>
+			<dependency name="psf_PegarValorStr"/>
+			<dependency name="strval"/>
+			<dependency name="true"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="pos_inicial">
+			</param>
+			<param name="pos_final">
+			</param>
+		</member>
+		<member name="M:psf_PegarValorEntreCharBool" syntax="psf_PegarValorEntreCharBool(str[], c[], vezesbuscarprimeirochar, vezesbuscarsegundochar)">
+			<stacksize value="264"/>
+			<dependency name="false"/>
+			<dependency name="psf_PegarValorEntreCharStr"/>
+			<dependency name="strval"/>
+			<dependency name="true"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="c">
+				<paraminfo> [3] </paraminfo>
+			</param>
+			<param name="vezesbuscarprimeirochar">
+			</param>
+			<param name="vezesbuscarsegundochar">
+			</param>
+		</member>
+		<member name="M:psf_PegarValorEntreCharFloat" syntax="psf_PegarValorEntreCharFloat(str[], c[], vezesbuscarprimeirochar, vezesbuscarsegundochar)">
+			<tagname value="Float"/>
+			<stacksize value="264"/>
+			<dependency name="floatstr"/>
+			<dependency name="psf_PegarValorEntreCharStr"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="c">
+				<paraminfo> [3] </paraminfo>
+			</param>
+			<param name="vezesbuscarprimeirochar">
+			</param>
+			<param name="vezesbuscarsegundochar">
+			</param>
+		</member>
+		<member name="M:psf_PegarValorEntreCharInt" syntax="psf_PegarValorEntreCharInt(str[], c[], vezesbuscarprimeirochar, vezesbuscarsegundochar)">
+			<stacksize value="264"/>
+			<dependency name="psf_PegarValorEntreCharStr"/>
+			<dependency name="strval"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="c">
+				<paraminfo> [3] </paraminfo>
+			</param>
+			<param name="vezesbuscarprimeirochar">
+			</param>
+			<param name="vezesbuscarsegundochar">
+			</param>
+		</member>
+		<member name="M:psf_PegarValorEntreCharStr" syntax="psf_PegarValorEntreCharStr(str[], c[], vezesbuscarprimeirochar, vezesbuscarsegundochar)">
+			<stacksize value="264"/>
+			<referrer name="psf_PegarValorEntreCharFloat"/>
+			<referrer name="psf_PegarValorEntreCharInt"/>
+			<referrer name="psf_PegarValorEntreCharBool"/>
+			<dependency name="psf_CopiarStr"/>
+			<dependency name="psf_PegarValorEntreCharStr"/>
+			<dependency name="psf_PosChar"/>
+			<dependency name="strdel"/>
+			<dependency name="strlen"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="c">
+				<paraminfo> [3] </paraminfo>
+			</param>
+			<param name="vezesbuscarprimeirochar">
+			</param>
+			<param name="vezesbuscarsegundochar">
+			</param>
+		</member>
+		<member name="M:psf_PegarValorFloat" syntax="psf_PegarValorFloat(str[], pos_inicial, pos_final)">
+			<tagname value="Float"/>
+			<stacksize value="263"/>
+			<dependency name="floatstr"/>
+			<dependency name="psf_PegarValorStr"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="pos_inicial">
+			</param>
+			<param name="pos_final">
+			</param>
+		</member>
+		<member name="M:psf_PegarValorInt" syntax="psf_PegarValorInt(str[], pos_inicial, pos_final)">
+			<stacksize value="263"/>
+			<dependency name="psf_PegarValorStr"/>
+			<dependency name="strval"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="pos_inicial">
+			</param>
+			<param name="pos_final">
+			</param>
+		</member>
+		<member name="M:psf_PegarValorStr" syntax="psf_PegarValorStr(str[], pos_inicial, pos_final)">
+			<stacksize value="261"/>
+			<referrer name="psf_PegarValorFloat"/>
+			<referrer name="psf_PegarValorInt"/>
+			<referrer name="psf_PegarValorBool"/>
+			<dependency name="psf_CopiarStr"/>
+			<dependency name="psf_PegarValorStr"/>
+			<dependency name="strdel"/>
+			<dependency name="strlen"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="pos_inicial">
+			</param>
+			<param name="pos_final">
+			</param>
+		</member>
+		<member name="M:psf_PosChar" syntax="psf_PosChar(str[], cC[], quantia_procurada, ler_case_sensitive)">
+			<stacksize value="522"/>
+			<referrer name="psf_strtokCI"/>
+			<referrer name="psf_strtokCL"/>
+			<referrer name="psf_strtok"/>
+			<referrer name="psf_PegarValorEntreCharStr"/>
+			<dependency name="false"/>
+			<dependency name="psf_CopiarStr"/>
+			<dependency name="psf_aCP"/>
+			<dependency name="strdel"/>
+			<dependency name="strfind"/>
+			<dependency name="strins"/>
+			<dependency name="strlen"/>
+			<dependency name="true"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="cC">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="quantia_procurada">
+			</param>
+			<param name="ler_case_sensitive">
+				<paraminfo>bool </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_RegraDupla" syntax="psf_RegraDupla(str[], cb, cc)">
+			<stacksize value="265"/>
+			<referrer name="psf_DuplarStr"/>
+			<dependency name="false"/>
+			<dependency name="psf_CharStr"/>
+			<dependency name="psf_CopiarStr"/>
+			<dependency name="psf_RegraDupla"/>
+			<dependency name="strfind"/>
+			<dependency name="strins"/>
+			<dependency name="strlen"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="cb">
+			</param>
+			<param name="cc">
+			</param>
+		</member>
+		<member name="M:psf_RegraQuarta" syntax="psf_RegraQuarta(str[])">
+			<stacksize value="264"/>
+			<referrer name="psf_FormatarStr"/>
+			<dependency name="psf_CopiarStrL"/>
+			<dependency name="psf_InverterStr_PCOD"/>
+			<dependency name="strdel"/>
+			<dependency name="strins"/>
+			<dependency name="strlen"/>
+			<param name="str">
+				<paraminfo> [256] </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_RegraTripla" syntax="psf_RegraTripla(str[])">
+			<stacksize value="9"/>
+			<referrer name="psf_FormatarStr"/>
+			<dependency name="psf_CharStr"/>
+			<dependency name="psf_MaCA"/>
+			<dependency name="strcat"/>
+			<param name="str">
+				<paraminfo> [256] </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_ReverterFiltro" syntax="psf_ReverterFiltro(str[])">
+			<stacksize value="522"/>
+			<dependency name="FiltroB"/>
+			<dependency name="FiltroF"/>
+			<dependency name="psf_ParteExiste"/>
+			<dependency name="psf_ReverterFiltro"/>
+			<dependency name="psf_SubstituirChar"/>
+			<dependency name="strcat"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_StrNumerica" syntax="psf_StrNumerica(str[])">
+			<stacksize value="6"/>
+			<dependency name="psf_nCA"/>
+			<dependency name="strlen"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_SubstituirChar" syntax="psf_SubstituirChar(str[], cs[], ct[], ler_case_sensitive)">
+			<stacksize value="264"/>
+			<referrer name="psf_Filtrar"/>
+			<referrer name="psf_ReverterFiltro"/>
+			<referrer name="psf_FormatarStrTexto"/>
+			<dependency name="false"/>
+			<dependency name="psf_CopiarStr"/>
+			<dependency name="psf_SubstituirChar"/>
+			<dependency name="strdel"/>
+			<dependency name="strfind"/>
+			<dependency name="strins"/>
+			<dependency name="strlen"/>
+			<dependency name="true"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="cs">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="ct">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="ler_case_sensitive">
+				<paraminfo>bool </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_SubstituirCharC" syntax="psf_SubstituirCharC(str[], cs[], ct[], ler_case_sensitive, &amp;total_substituido, vezes_substituir)">
+			<stacksize value="265"/>
+			<referrer name="psf_dC"/>
+			<dependency name="false"/>
+			<dependency name="psf_CopiarStr"/>
+			<dependency name="psf_SubstituirCharC"/>
+			<dependency name="strdel"/>
+			<dependency name="strfind"/>
+			<dependency name="strins"/>
+			<dependency name="strlen"/>
+			<dependency name="true"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="cs">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="ct">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="ler_case_sensitive">
+				<paraminfo>bool </paraminfo>
+			</param>
+			<param name="total_substituido">
+				<paraminfo> &amp; </paraminfo>
+			</param>
+			<param name="vezes_substituir">
+			</param>
+		</member>
+		<member name="M:psf_aCA" syntax="psf_aCA(c)">
+			<stacksize value="1"/>
+			<referrer name="psf_adT"/>
+			<referrer name="psf_FormularaCa"/>
+			<referrer name="psf_aCAF"/>
+			<param name="c">
+			</param>
+		</member>
+		<member name="M:psf_aCAF" syntax="psf_aCAF(&amp;c)">
+			<stacksize value="4"/>
+			<dependency name="psf_FormularaCa"/>
+			<dependency name="psf_aCA"/>
+			<param name="c">
+				<paraminfo> &amp; </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_aCP" syntax="psf_aCP(str[])">
+			<stacksize value="261"/>
+			<referrer name="psf_ContagemChar"/>
+			<referrer name="psf_PosChar"/>
+			<dependency name="psf_CopiarStr"/>
+			<dependency name="psf_aCP"/>
+			<dependency name="psf_adT"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_adT" syntax="psf_adT(&amp;c, nA)">
+			<stacksize value="5"/>
+			<referrer name="psf_aCP"/>
+			<referrer name="psf_iFStr"/>
+			<referrer name="psf_dC"/>
+			<referrer name="psf_MaCA"/>
+			<referrer name="psf_FormatarStr"/>
+			<referrer name="pse_cZ"/>
+			<referrer name="psf_mN"/>
+			<referrer name="psf_PCODNumero"/>
+			<dependency name="psf_FormularaCa"/>
+			<dependency name="psf_FormularnCa"/>
+			<dependency name="psf_aCA"/>
+			<dependency name="psf_nCA"/>
+			<param name="c">
+				<paraminfo> &amp; </paraminfo>
+			</param>
+			<param name="nA">
+			</param>
+		</member>
+		<member name="M:psf_dC" syntax="psf_dC(str[], &amp;ret, mr)">
+			<stacksize value="11"/>
+			<referrer name="psf_iFStr"/>
+			<dependency name="psf_ParteExiste"/>
+			<dependency name="psf_SubstituirCharC"/>
+			<dependency name="psf_adT"/>
+			<dependency name="psf_dC"/>
+			<dependency name="sapMa"/>
+			<dependency name="sapMi"/>
+			<dependency name="strlen"/>
+			<dependency name="true"/>
+			<param name="str">
+				<paraminfo> [256] </paraminfo>
+			</param>
+			<param name="ret">
+				<paraminfo> &amp; </paraminfo>
+			</param>
+			<param name="mr">
+			</param>
+		</member>
+		<member name="M:psf_fT" syntax="psf_fT(t)">
+			<stacksize value="1"/>
+			<referrer name="psf_iFStr"/>
+			<param name="t">
+			</param>
+		</member>
+		<member name="M:psf_iFStr" syntax="psf_iFStr(str[], taxa)">
+			<stacksize value="8"/>
+			<referrer name="psf_FormatarStr"/>
+			<dependency name="psf_FormatoStr"/>
+			<dependency name="psf_adT"/>
+			<dependency name="psf_dC"/>
+			<dependency name="psf_fT"/>
+			<param name="str">
+				<paraminfo> [256] </paraminfo>
+			</param>
+			<param name="taxa">
+			</param>
+		</member>
+		<member name="M:psf_mN" syntax="psf_mN(str[])">
+			<stacksize value="6"/>
+			<referrer name="psf_PCODNumero"/>
+			<dependency name="pse_cZ"/>
+			<dependency name="psf_FormularnCa"/>
+			<dependency name="psf_adT"/>
+			<dependency name="psf_mN"/>
+			<dependency name="strlen"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_nCA" syntax="psf_nCA(c)">
+			<stacksize value="1"/>
+			<referrer name="psf_StrNumerica"/>
+			<referrer name="psf_adT"/>
+			<referrer name="psf_FormularnCa"/>
+			<param name="c">
+			</param>
+		</member>
+		<member name="M:psf_setchar" syntax="psf_setchar(&amp;c, c2)">
+			<stacksize value="1"/>
+			<param name="c">
+				<paraminfo> &amp; </paraminfo>
+			</param>
+			<param name="c2">
+			</param>
+		</member>
+		<member name="M:psf_strtok" syntax="psf_strtok(str[], &amp;casa_inicial, charseparador[])">
+			<stacksize value="137"/>
+			<dependency name="psf_CopiarStrL"/>
+			<dependency name="psf_PosChar"/>
+			<dependency name="psf_strtok"/>
+			<dependency name="strlen"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="casa_inicial">
+				<paraminfo> &amp; </paraminfo>
+			</param>
+			<param name="charseparador">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_strtokCI" syntax="psf_strtokCI(str[], casa_inicial, charseparador[])">
+			<stacksize value="136"/>
+			<dependency name="psf_CopiarStrL"/>
+			<dependency name="psf_PosChar"/>
+			<dependency name="psf_strtokCI"/>
+			<dependency name="strlen"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="casa_inicial">
+			</param>
+			<param name="charseparador">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_strtokCL" syntax="psf_strtokCL(str[], casa_inicial, casa_final, charseparador[])">
+			<stacksize value="138"/>
+			<dependency name="psf_ContagemChar"/>
+			<dependency name="psf_CopiarStrL"/>
+			<dependency name="psf_PosChar"/>
+			<dependency name="psf_strtokCL"/>
+			<dependency name="strlen"/>
+			<param name="str">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="casa_inicial">
+			</param>
+			<param name="casa_final">
+			</param>
+			<param name="charseparador">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:psf_tO" syntax="psf_tO(tf)">
+			<stacksize value="1"/>
+			<referrer name="psf_FormatarStr"/>
+			<param name="tf">
+			</param>
+		</member>
+		<member name="M:strcat" syntax="strcat(dest[], source[], maxlength)">
+			<attribute name="native"/>
+			<referrer name="psf_RegraTripla"/>
+			<referrer name="psf_DuplarStr"/>
+			<referrer name="psf_FormatarStr"/>
+			<referrer name="psf_Filtrar"/>
+			<referrer name="psf_ReverterFiltro"/>
+			<referrer name="psf_FormatarStrTexto"/>
+			<param name="dest">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="source">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="maxlength">
+			</param>
+		</member>
+		<member name="M:strcmp" syntax="strcmp(string1[], string2[], ignorecase, length)">
+			<attribute name="native"/>
+			<referrer name="psf_CharFiltrado"/>
+			<param name="string1">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="string2">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="ignorecase">
+				<paraminfo>bool </paraminfo>
+			</param>
+			<param name="length">
+			</param>
+		</member>
+		<member name="M:strdel" syntax="strdel(string[], start, end)">
+			<tagname value="bool"/>
+			<attribute name="native"/>
+			<referrer name="psf_PegarValorEntreCharStr"/>
+			<referrer name="psf_PegarValorStr"/>
+			<referrer name="psf_SubstituirChar"/>
+			<referrer name="psf_ContagemChar"/>
+			<referrer name="psf_PosChar"/>
+			<referrer name="psf_PCODSubstituirChar"/>
+			<referrer name="psf_RegraQuarta"/>
+			<referrer name="psf_SubstituirCharC"/>
+			<param name="string">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="start">
+			</param>
+			<param name="end">
+			</param>
+		</member>
+		<member name="M:strfind" syntax="strfind(string[], sub[], ignorecase, pos)">
+			<attribute name="native"/>
+			<referrer name="psf_ParteExiste"/>
+			<referrer name="psf_SubstituirChar"/>
+			<referrer name="psf_ContagemChar"/>
+			<referrer name="psf_PosChar"/>
+			<referrer name="psf_RegraDupla"/>
+			<referrer name="psf_PCODSubstituirChar"/>
+			<referrer name="psf_SubstituirCharC"/>
+			<param name="string">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="sub">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="ignorecase">
+				<paraminfo>bool </paraminfo>
+			</param>
+			<param name="pos">
+			</param>
+		</member>
+		<member name="M:strins" syntax="strins(string[], substr[], pos, maxlength)">
+			<tagname value="bool"/>
+			<attribute name="native"/>
+			<referrer name="psf_InverterStr"/>
+			<referrer name="psf_SubstituirChar"/>
+			<referrer name="psf_ContagemChar"/>
+			<referrer name="psf_PosChar"/>
+			<referrer name="psf_RegraDupla"/>
+			<referrer name="psf_AdF"/>
+			<referrer name="psf_PCODSubstituirChar"/>
+			<referrer name="psf_RegraQuarta"/>
+			<referrer name="psf_InverterStr_PCOD"/>
+			<referrer name="psf_SubstituirCharC"/>
+			<referrer name="psf_PCODNumero"/>
+			<param name="string">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="substr">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="pos">
+			</param>
+			<param name="maxlength">
+			</param>
+		</member>
+		<member name="M:strlen" syntax="strlen(string[])">
+			<attribute name="native"/>
+			<referrer name="psf_LimparStr"/>
+			<referrer name="psf_InverterStr"/>
+			<referrer name="psf_strtokCI"/>
+			<referrer name="psf_strtokCL"/>
+			<referrer name="psf_strtok"/>
+			<referrer name="psf_PegarValorEntreCharStr"/>
+			<referrer name="psf_PegarValorStr"/>
+			<referrer name="psf_StrNumerica"/>
+			<referrer name="psf_CopiarStr"/>
+			<referrer name="psf_SubstituirChar"/>
+			<referrer name="psf_ContagemChar"/>
+			<referrer name="psf_PosChar"/>
+			<referrer name="psf_FormatoStr"/>
+			<referrer name="psf_RegraDupla"/>
+			<referrer name="psf_AdF"/>
+			<referrer name="psf_PCODSubstituirChar"/>
+			<referrer name="psf_RegraQuarta"/>
+			<referrer name="psf_InverterStr_PCOD"/>
+			<referrer name="psf_dC"/>
+			<referrer name="psf_SubstituirCharC"/>
+			<referrer name="psf_DuplarStr"/>
+			<referrer name="psf_FormatarStr"/>
+			<referrer name="psf_mN"/>
+			<referrer name="psf_PCODNumero"/>
+			<param name="string">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:strval" syntax="strval(string[])">
+			<attribute name="native"/>
+			<referrer name="psf_PegarValorEntreCharInt"/>
+			<referrer name="psf_PegarValorEntreCharBool"/>
+			<referrer name="psf_PegarValorInt"/>
+			<referrer name="psf_PegarValorBool"/>
+			<referrer name="psf_PCODNumero"/>
+			<param name="string">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+
+	</members>
+</doc>

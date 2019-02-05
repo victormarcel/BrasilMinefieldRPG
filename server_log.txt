@@ -1,0 +1,172 @@
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:19:29] 
+[22:19:29] Server Plugins
+[22:19:29] --------------
+[22:19:29]  Loading plugin: streamer
+[22:19:29]   Failed.
+[22:19:29]  Loaded 0 plugins.
+
+[22:19:29] I couldn't load any gamemode scripts. Please verify your server.cfg
+[22:19:29] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:19:54] 
+[22:19:54] Server Plugins
+[22:19:54] --------------
+[22:19:54]  Loaded 0 plugins.
+
+[22:19:54] I couldn't load any gamemode scripts. Please verify your server.cfg
+[22:19:54] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:20:52] 
+[22:20:52] Server Plugins
+[22:20:52] --------------
+[22:20:52]  Loaded 0 plugins.
+
+[22:20:52] 
+[22:20:52] Filterscripts
+[22:20:52] ---------------
+[22:20:52]   Loading filterscript 'ARARA.amx'...
+[22:20:52]   Unable to load filterscript 'ARARA.amx'.
+[22:20:52]   Loading filterscript 'Capacete.amx'...
+[22:20:52]   Unable to load filterscript 'Capacete.amx'.
+[22:20:52]   Loading filterscript 'Laser.amx'...
+[22:20:52]   Unable to load filterscript 'Laser.amx'.
+[22:20:52]   Loading filterscript 'mdogg.amx'...
+[22:20:52]   Unable to load filterscript 'mdogg.amx'.
+[22:20:52]   Loading filterscript 'neon.amx'...
+[22:20:52]   Unable to load filterscript 'neon.amx'.
+[22:20:52]   Loading filterscript 'carro.amx'...
+[22:20:52]   Unable to load filterscript 'carro.amx'.
+[22:20:52]   Loading filterscript 'mp3.amx'...
+[22:20:52]   Unable to load filterscript 'mp3.amx'.
+[22:20:52]   Loading filterscript 'ARF.amx'...
+[22:20:52]   Unable to load filterscript 'ARF.amx'.
+[22:20:52]   Loading filterscript 'equipamentos.amx'...
+[22:20:52]   Unable to load filterscript 'equipamentos.amx'.
+[22:20:52]   Loaded 0 filterscripts.
+
+[22:20:52] 
+********************************************
+[22:20:52]        [25/01/2019 22:20:52]      
+[22:20:52] ********************************************
+
+[22:20:52] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[22:20:53] [BLB]: 24 Orgs Carregadas
+[22:20:53] [BLB]: 216 Casas Carregadas
+[22:20:53] [BLB]: 6 Empresas Carregadas
+[22:20:53] [BLB]: 24 Empresas Especiais Carregadas
+[22:20:53] [BLB]: 50 Carros Carregados
+[22:20:53] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[22:20:53] **************************************
+[22:20:53] *    Brasil Life Boy RP/RPG ฎ    *
+[22:20:53] *บบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบ*
+[22:20:53] *    RPG versใo 3.1 ฎ                *
+[22:20:53] *    Los Santos ฎ                    *
+[22:20:53] *------------------------------------*
+[22:20:53] *                  Servidor Ligado.  *
+[22:20:53] **************************************
+[22:20:53]  
+[22:20:53] Number of vehicle models: 74
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[22:21:26] filterscripts = ""  (string)
+[22:21:26] 
+[22:21:26] Server Plugins
+[22:21:26] --------------
+[22:21:26]  Loaded 0 plugins.
+
+[22:21:26] 
+[22:21:26] Filterscripts
+[22:21:26] ---------------
+[22:21:26]   Loaded 0 filterscripts.
+
+[22:21:26] 
+********************************************
+[22:21:26]        [25/01/2019 22:21:26]      
+[22:21:26] ********************************************
+
+[22:21:26] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[22:21:26] [BLB]: 24 Orgs Carregadas
+[22:21:26] [BLB]: 216 Casas Carregadas
+[22:21:26] [BLB]: 6 Empresas Carregadas
+[22:21:26] [BLB]: 24 Empresas Especiais Carregadas
+[22:21:26] [BLB]: 50 Carros Carregados
+[22:21:26] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[22:21:26] **************************************
+[22:21:26] *    Brasil Life Boy RP/RPG ฎ    *
+[22:21:26] *บบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบบ*
+[22:21:26] *    RPG versใo 3.1 ฎ                *
+[22:21:26] *    Los Santos ฎ                    *
+[22:21:26] *------------------------------------*
+[22:21:26] *                  Servidor Ligado.  *
+[22:21:26] **************************************
+[22:21:26]  
+[22:21:26] Number of vehicle models: 74
+[22:22:47] [connection] 127.0.0.1:59417 requests connection cookie.
+[22:22:48] [connection] incoming connection: 127.0.0.1:59417 id: 0
+[22:22:48] [join] Lest_ has joined the server (0:127.0.0.1)
+[22:23:04] Lest_ has logged in.
+[22:24:12] [part] Lest_ has left the server (0:1)
+[22:26:08] [connection] 127.0.0.1:56437 requests connection cookie.
+[22:26:09] [connection] incoming connection: 127.0.0.1:56437 id: 0
+[22:26:09] [join] Lest_ has joined the server (0:127.0.0.1)
+[22:29:17] Lest_ has logged in.
+[22:37:06] Lest_ pagou R$10 para entrar na empresa 4
+[00:38:59] [part] Lest_ has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[04:03:09] filterscripts = ""  (string)
+[04:03:10] 
+[04:03:11] Server Plugins
+[04:03:11] --------------
+[04:03:12]  Loaded 0 plugins.
+
+[04:03:17] 
+[04:03:17] Filterscripts
+[04:03:18] ---------------
+[04:03:18]   Loaded 0 filterscripts.
+
+[04:03:29] 
+********************************************
+[04:03:30]        [26/01/2019 04:03:29]      
+[04:03:30] ********************************************
+
+[04:03:31] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()

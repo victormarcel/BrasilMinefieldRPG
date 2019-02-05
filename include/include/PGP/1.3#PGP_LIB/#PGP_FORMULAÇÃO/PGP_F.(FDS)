@@ -1,0 +1,19 @@
+/*
+*
+*	-= PGP FORMULAÇÃO =-
+*	Protioso Gerenciamento de Pickups
+*	Autor: Protioso ([VGS]Protioso_OC)
+*
+*/
+
+stock PGP_CSTR_SP(strr[], strb[], t)
+{
+	new c; PGP_CSTR_Z
+	while(c <t)
+	{
+		PGP_AC(strr, c, strb[c]);
+		c++;
+	}
+}
+
+stock PGP_AC(str[], l, c) str[l] = c;
