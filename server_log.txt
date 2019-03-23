@@ -170,3 +170,983 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [04:03:30] ********************************************
 
 [04:03:31] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:38:22] 
+[14:38:22] Server Plugins
+[14:38:22] --------------
+[14:38:22]  Loading plugin: streamer
+[14:38:22] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[14:38:22]   Loaded.
+[14:38:22]  Loaded 1 plugins.
+
+[14:38:22] 
+[14:38:22] Filterscripts
+[14:38:22] ---------------
+[14:38:22]   Loading filterscript '0.amx'...
+[14:38:22]   Unable to load filterscript '0.amx'.
+[14:38:22]   Loaded 0 filterscripts.
+
+[14:38:22] 
+********************************************
+[14:38:22]        [09/02/2019 14:38:22]      
+[14:38:22] ********************************************
+
+[14:38:22] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[14:38:22] [BLB]: 24 Orgs Carregadas
+[14:38:22] [BLB]: 216 Casas Carregadas
+[14:38:22] [BLB]: 6 Empresas Carregadas
+[14:38:22] [BLB]: 24 Empresas Especiais Carregadas
+[14:38:22] [BLB]: 50 Carros Carregados
+[14:38:22] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[14:38:22] **************************************
+[14:38:22] *    Brasil Life Boy RP/RPG ®    *
+[14:38:22] *ºººººººººººººººººººººººººººººººººººº*
+[14:38:22] *    RPG versão 3.1 ®                *
+[14:38:22] *    Los Santos ®                    *
+[14:38:22] *------------------------------------*
+[14:38:22] *                  Servidor Ligado.  *
+[14:38:22] **************************************
+[14:38:22]  
+[14:38:22] Number of vehicle models: 74
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:40:35] 
+[14:40:35] Server Plugins
+[14:40:35] --------------
+[14:40:35]  Loading plugin: streamer
+[14:40:35] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[14:40:35]   Loaded.
+[14:40:35]  Loaded 1 plugins.
+
+[14:40:35] 
+[14:40:35] Filterscripts
+[14:40:35] ---------------
+[14:40:35]   Loading filterscript '0.amx'...
+[14:40:35]   Unable to load filterscript '0.amx'.
+[14:40:35]   Loaded 0 filterscripts.
+
+[14:40:35] 
+********************************************
+[14:40:35]        [09/02/2019 14:40:35]      
+[14:40:35] ********************************************
+
+[14:40:35] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[14:40:35] [BLB]: 24 Orgs Carregadas
+[14:40:35] [BLB]: 216 Casas Carregadas
+[14:40:35] [BLB]: 6 Empresas Carregadas
+[14:40:35] [BLB]: 24 Empresas Especiais Carregadas
+[14:40:35] [BLB]: 50 Carros Carregados
+[14:40:35] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[14:40:35] **************************************
+[14:40:35] *    Brasil Life Boy RP/RPG ®    *
+[14:40:35] *ºººººººººººººººººººººººººººººººººººº*
+[14:40:35] *    RPG versão 3.1 ®                *
+[14:40:35] *    Los Santos ®                    *
+[14:40:35] *------------------------------------*
+[14:40:35] *                  Servidor Ligado.  *
+[14:40:35] **************************************
+[14:40:35]  
+[14:40:35] Number of vehicle models: 74
+[14:41:07] [connection] 127.0.0.1:53939 requests connection cookie.
+[14:41:08] [connection] incoming connection: 127.0.0.1:53939 id: 0
+[14:41:08] [join] Lest_ has joined the server (0:127.0.0.1)
+[14:41:15] Lest_ has logged in.
+[14:45:48] 
+=================================================================
+[14:45:48] Servidor Desligado: [09/02/2019 14:45:48]
+[14:45:48] =================================================================
+
+[14:45:59] 
+********************************************
+[14:45:59]        [09/02/2019 14:45:59]      
+[14:45:59] ********************************************
+
+[14:45:59] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[14:46:00] [BLB]: 24 Orgs Carregadas
+[14:46:00] [BLB]: 216 Casas Carregadas
+[14:46:00] [BLB]: 6 Empresas Carregadas
+[14:46:00] [BLB]: 24 Empresas Especiais Carregadas
+[14:46:00] [BLB]: 50 Carros Carregados
+[14:46:00] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[14:46:00] **************************************
+[14:46:00] *    Brasil Life Boy RP/RPG ®    *
+[14:46:00] *ºººººººººººººººººººººººººººººººººººº*
+[14:46:00] *    RPG versão 3.1 ®                *
+[14:46:00] *    Los Santos ®                    *
+[14:46:00] *------------------------------------*
+[14:46:00] *                  Servidor Ligado.  *
+[14:46:00] **************************************
+[14:46:00]  
+[14:46:00] Number of vehicle models: 74
+[14:46:07] Lest_ has logged in.
+[14:46:26] [part] Lest_ has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[14:49:28] 
+[14:49:28] Server Plugins
+[14:49:28] --------------
+[14:49:28]  Loading plugin: streamer
+[14:49:28] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[14:49:28]   Loaded.
+[14:49:28]  Loaded 1 plugins.
+
+[14:49:28] 
+[14:49:28] Filterscripts
+[14:49:28] ---------------
+[14:49:28]   Loading filterscript '0.amx'...
+[14:49:28]   Unable to load filterscript '0.amx'.
+[14:49:28]   Loaded 0 filterscripts.
+
+[14:49:28] 
+********************************************
+[14:49:28]        [09/02/2019 14:49:28]      
+[14:49:28] ********************************************
+
+[14:49:28] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[14:49:29] [BLB]: 24 Orgs Carregadas
+[14:49:29] [BLB]: 216 Casas Carregadas
+[14:49:29] [BLB]: 6 Empresas Carregadas
+[14:49:29] [BLB]: 24 Empresas Especiais Carregadas
+[14:49:29] [BLB]: 50 Carros Carregados
+[14:49:29] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[14:49:29] **************************************
+[14:49:29] *    Brasil Life Boy RP/RPG ®    *
+[14:49:29] *ºººººººººººººººººººººººººººººººººººº*
+[14:49:29] *    RPG versão 3.1 ®                *
+[14:49:29] *    Los Santos ®                    *
+[14:49:29] *------------------------------------*
+[14:49:29] *                  Servidor Ligado.  *
+[14:49:29] **************************************
+[14:49:29]  
+[14:49:29] Number of vehicle models: 74
+[14:58:08] [connection] 127.0.0.1:63664 requests connection cookie.
+[14:58:09] [connection] incoming connection: 127.0.0.1:63664 id: 0
+[14:58:10] [join] Lest_ has joined the server (0:127.0.0.1)
+[14:58:29] Lest_ has logged in.
+[14:59:03] [part] Lest_ has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:46:17] 
+[20:46:17] Server Plugins
+[20:46:17] --------------
+[20:46:17]  Loading plugin: streamer
+[20:46:17] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[20:46:17]   Loaded.
+[20:46:17]  Loaded 1 plugins.
+
+[20:46:17] 
+[20:46:17] Filterscripts
+[20:46:17] ---------------
+[20:46:17]   Loading filterscript '0.amx'...
+[20:46:17]   Unable to load filterscript '0.amx'.
+[20:46:17]   Loaded 0 filterscripts.
+
+[20:46:17] 
+********************************************
+[20:46:17]        [12/02/2019 20:46:17]      
+[20:46:17] ********************************************
+
+[20:46:17] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[20:46:17] [BLB]: 24 Orgs Carregadas
+[20:46:17] [BLB]: 216 Casas Carregadas
+[20:46:17] [BLB]: 6 Empresas Carregadas
+[20:46:17] [BLB]: 24 Empresas Especiais Carregadas
+[20:46:17] [BLB]: 50 Carros Carregados
+[20:46:17] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[20:46:17] **************************************
+[20:46:17] *    Brasil Life Boy RP/RPG ®    *
+[20:46:17] *ºººººººººººººººººººººººººººººººººººº*
+[20:46:17] *    RPG versão 3.1 ®                *
+[20:46:17] *    Los Santos ®                    *
+[20:46:17] *------------------------------------*
+[20:46:17] *                  Servidor Ligado.  *
+[20:46:17] **************************************
+[20:46:17]  
+[20:46:17] Number of vehicle models: 74
+[20:46:55] [connection] 127.0.0.1:50766 requests connection cookie.
+[20:46:56] [connection] incoming connection: 127.0.0.1:50766 id: 0
+[20:46:56] [join] Lest_ has joined the server (0:127.0.0.1)
+[20:47:04] Lest_ has logged in.
+[20:53:28] [part] Lest_ has left the server (0:1)
+[21:02:33] [connection] 127.0.0.1:65293 requests connection cookie.
+[21:02:34] [connection] incoming connection: 127.0.0.1:65293 id: 0
+[21:02:34] [join] Lest_ has joined the server (0:127.0.0.1)
+[21:02:42] Lest_ has logged in.
+[21:03:25] ** Diretor de Producao Lest_: teste. )) **
+[21:03:30] [part] Lest_ has left the server (0:1)
+[21:03:58] [connection] 127.0.0.1:62688 requests connection cookie.
+[21:03:59] [connection] incoming connection: 127.0.0.1:62688 id: 0
+[21:03:59] [join] Lest_ has joined the server (0:127.0.0.1)
+[21:04:07] Lest_ has logged in.
+[21:04:40] * Lest_ falou algo no rádio da gangue.
+[21:04:52] * Lest_ falou algo no rádio da gangue.
+[21:05:44] * Lest_ falou algo no rádio da gangue.
+[21:05:58] * Lest_ falou algo no rádio da gangue.
+[21:06:07] * Lest_ falou algo no rádio da gangue.
+[21:07:31] ** Chefão Lest_: teste. )) **
+[21:07:49] [part] Lest_ has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:11:43] 
+[18:11:43] Server Plugins
+[18:11:43] --------------
+[18:11:43]  Loading plugin: streamer
+[18:11:43] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[18:11:43]   Loaded.
+[18:11:43]  Loaded 1 plugins.
+
+[18:11:43] 
+[18:11:43] Filterscripts
+[18:11:43] ---------------
+[18:11:43]   Loading filterscript '0.amx'...
+[18:11:43]   Unable to load filterscript '0.amx'.
+[18:11:43]   Loaded 0 filterscripts.
+
+[18:11:43] 
+********************************************
+[18:11:44]        [18/02/2019 18:11:43]      
+[18:11:44] ********************************************
+
+[18:11:44] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:11:44] [BLB]: 24 Orgs Carregadas
+[18:11:44] [BLB]: 216 Casas Carregadas
+[18:11:44] [BLB]: 6 Empresas Carregadas
+[18:11:44] [BLB]: 24 Empresas Especiais Carregadas
+[18:11:44] [BLB]: 50 Carros Carregados
+[18:11:44] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[18:11:44] **************************************
+[18:11:44] *    Brasil Life Boy RP/RPG ®    *
+[18:11:44] *ºººººººººººººººººººººººººººººººººººº*
+[18:11:44] *    RPG versão 3.1 ®                *
+[18:11:44] *    Los Santos ®                    *
+[18:11:44] *------------------------------------*
+[18:11:44] *                  Servidor Ligado.  *
+[18:11:44] **************************************
+[18:11:44]  
+[18:11:44] Number of vehicle models: 74
+[18:12:17] [connection] 127.0.0.1:63664 requests connection cookie.
+[18:12:18] [connection] incoming connection: 127.0.0.1:63664 id: 0
+[18:12:19] [join] Lest_ has joined the server (0:127.0.0.1)
+[18:12:26] Lest_ has logged in.
+[18:13:15] [part] Lest_ has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:22:54] 
+[18:22:54] Server Plugins
+[18:22:54] --------------
+[18:22:54]  Loading plugin: streamer
+[18:22:54] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[18:22:54]   Loaded.
+[18:22:54]  Loaded 1 plugins.
+
+[18:22:54] 
+[18:22:54] Filterscripts
+[18:22:54] ---------------
+[18:22:54]   Loading filterscript '0.amx'...
+[18:22:54]   Unable to load filterscript '0.amx'.
+[18:22:54]   Loaded 0 filterscripts.
+
+[18:22:55] 
+********************************************
+[18:22:55]        [18/02/2019 18:22:55]      
+[18:22:55] ********************************************
+
+[18:22:55] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:22:55] [BLB]: 24 Orgs Carregadas
+[18:22:55] [BLB]: 216 Casas Carregadas
+[18:22:55] [BLB]: 6 Empresas Carregadas
+[18:22:55] [BLB]: 24 Empresas Especiais Carregadas
+[18:22:55] [BLB]: 50 Carros Carregados
+[18:22:55] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[18:22:55] **************************************
+[18:22:55] *    Brasil Life Boy RP/RPG ®    *
+[18:22:55] *ºººººººººººººººººººººººººººººººººººº*
+[18:22:55] *    RPG versão 3.1 ®                *
+[18:22:55] *    Los Santos ®                    *
+[18:22:55] *------------------------------------*
+[18:22:55] *                  Servidor Ligado.  *
+[18:22:55] **************************************
+[18:22:55]  
+[18:22:55] Number of vehicle models: 74
+[18:23:30] [connection] 127.0.0.1:54862 requests connection cookie.
+[18:23:31] [connection] incoming connection: 127.0.0.1:54862 id: 0
+[18:23:31] [join] Lest_ has joined the server (0:127.0.0.1)
+[18:24:10] Lest_ has logged in.
+[18:24:32] [part] Lest_ has left the server (0:1)
+[18:25:57] [connection] 127.0.0.1:51470 requests connection cookie.
+[18:25:58] [connection] incoming connection: 127.0.0.1:51470 id: 0
+[18:25:59] [join] Lest_ has joined the server (0:127.0.0.1)
+[18:26:07] Lest_ has logged in.
+[18:26:15] 
+=================================================================
+[18:26:15] Servidor Desligado: [18/02/2019 18:26:15]
+[18:26:15] =================================================================
+
+[18:26:27] 
+********************************************
+[18:26:27]        [18/02/2019 18:26:27]      
+[18:26:27] ********************************************
+
+[18:26:27] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:26:27] [BLB]: 24 Orgs Carregadas
+[18:26:27] [BLB]: 216 Casas Carregadas
+[18:26:27] [BLB]: 6 Empresas Carregadas
+[18:26:27] [BLB]: 24 Empresas Especiais Carregadas
+[18:26:27] [BLB]: 50 Carros Carregados
+[18:26:27] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[18:26:27] **************************************
+[18:26:27] *    Brasil Life Boy RP/RPG ®    *
+[18:26:27] *ºººººººººººººººººººººººººººººººººººº*
+[18:26:27] *    RPG versão 3.1 ®                *
+[18:26:27] *    Los Santos ®                    *
+[18:26:27] *------------------------------------*
+[18:26:27] *                  Servidor Ligado.  *
+[18:26:27] **************************************
+[18:26:27]  
+[18:26:27] Number of vehicle models: 74
+[18:26:31] Lest_ has logged in.
+[18:33:52] 
+=================================================================
+[18:33:52] Servidor Desligado: [18/02/2019 18:33:52]
+[18:33:52] =================================================================
+
+[18:34:03] 
+********************************************
+[18:34:03]        [18/02/2019 18:34:03]      
+[18:34:03] ********************************************
+
+[18:34:03] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:34:04] [BLB]: 24 Orgs Carregadas
+[18:34:04] [BLB]: 216 Casas Carregadas
+[18:34:04] [BLB]: 6 Empresas Carregadas
+[18:34:04] [BLB]: 24 Empresas Especiais Carregadas
+[18:34:04] [BLB]: 50 Carros Carregados
+[18:34:04] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[18:34:04] **************************************
+[18:34:04] *    Brasil Life Boy RP/RPG ®    *
+[18:34:04] *ºººººººººººººººººººººººººººººººººººº*
+[18:34:04] *    RPG versão 3.1 ®                *
+[18:34:04] *    Los Santos ®                    *
+[18:34:04] *------------------------------------*
+[18:34:04] *                  Servidor Ligado.  *
+[18:34:04] **************************************
+[18:34:04]  
+[18:34:04] Number of vehicle models: 73
+[18:34:11] Lest_ has logged in.
+[18:44:15] [part] Lest_ has left the server (0:1)
+[18:50:39] [connection] 127.0.0.1:60193 requests connection cookie.
+[18:50:40] [connection] incoming connection: 127.0.0.1:60193 id: 0
+[18:50:40] [join] Lest_ has joined the server (0:127.0.0.1)
+[18:51:06] Lest_ has logged in.
+[18:51:56] [part] Lest_ has left the server (0:1)
+[18:52:44] [connection] 127.0.0.1:57157 requests connection cookie.
+[18:52:45] [connection] incoming connection: 127.0.0.1:57157 id: 0
+[18:52:45] [join] Lest_ has joined the server (0:127.0.0.1)
+[18:52:51] Lest_ has logged in.
+[18:52:55] 
+=================================================================
+[18:52:55] Servidor Desligado: [18/02/2019 18:52:55]
+[18:52:55] =================================================================
+
+[18:53:07] 
+********************************************
+[18:53:07]        [18/02/2019 18:53:07]      
+[18:53:07] ********************************************
+
+[18:53:07] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:53:07] [BLB]: 24 Orgs Carregadas
+[18:53:07] [BLB]: 216 Casas Carregadas
+[18:53:07] [BLB]: 6 Empresas Carregadas
+[18:53:07] [BLB]: 24 Empresas Especiais Carregadas
+[18:53:07] [BLB]: 50 Carros Carregados
+[18:53:07] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[18:53:07] **************************************
+[18:53:07] *    Brasil Life Boy RP/RPG ®    *
+[18:53:07] *ºººººººººººººººººººººººººººººººººººº*
+[18:53:07] *    RPG versão 3.1 ®                *
+[18:53:07] *    Los Santos ®                    *
+[18:53:07] *------------------------------------*
+[18:53:07] *                  Servidor Ligado.  *
+[18:53:07] **************************************
+[18:53:07]  
+[18:53:07] Number of vehicle models: 73
+[18:53:39] Lest_ has logged in.
+[19:40:29] [part] Lest_ has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[18:26:28] 
+[18:26:28] Server Plugins
+[18:26:28] --------------
+[18:26:28]  Loading plugin: streamer
+[18:26:28] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[18:26:28]   Loaded.
+[18:26:28]  Loaded 1 plugins.
+
+[18:26:29] 
+[18:26:29] Filterscripts
+[18:26:29] ---------------
+[18:26:29]   Loading filterscript '0.amx'...
+[18:26:29]   Unable to load filterscript '0.amx'.
+[18:26:29]   Loaded 0 filterscripts.
+
+[18:26:29] 
+********************************************
+[18:26:29]        [19/02/2019 18:26:29]      
+[18:26:29] ********************************************
+
+[18:26:29] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:26:29] [BLB]: 24 Orgs Carregadas
+[18:26:29] [BLB]: 216 Casas Carregadas
+[18:26:29] [BLB]: 6 Empresas Carregadas
+[18:26:29] [BLB]: 24 Empresas Especiais Carregadas
+[18:26:29] [BLB]: 50 Carros Carregados
+[18:26:29] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[18:26:29] **************************************
+[18:26:29] *    Brasil Life Boy RP/RPG ®    *
+[18:26:29] *ºººººººººººººººººººººººººººººººººººº*
+[18:26:29] *    RPG versão 3.1 ®                *
+[18:26:29] *    Los Santos ®                    *
+[18:26:29] *------------------------------------*
+[18:26:29] *                  Servidor Ligado.  *
+[18:26:29] **************************************
+[18:26:29]  
+[18:26:29] Number of vehicle models: 73
+[18:27:09] [connection] 127.0.0.1:60397 requests connection cookie.
+[18:27:10] [connection] incoming connection: 127.0.0.1:60397 id: 0
+[18:27:10] [join] Lest_ has joined the server (0:127.0.0.1)
+[18:28:23] Lest_ has logged in.
+[18:28:42] AdmCmd: Lest_ matou Lest_
+[18:28:42] AdmCmd: Lest_ ganhou uma morte de: Lest_
+[18:28:42] [death] Lest_ died 255
+[18:30:21] [part] Lest_ has left the server (0:1)
+[18:48:21] [connection] 127.0.0.1:52544 requests connection cookie.
+[18:48:22] [connection] incoming connection: 127.0.0.1:52544 id: 0
+[18:48:23] [join] Lest_ has joined the server (0:127.0.0.1)
+[18:48:43] [part] Lest_ has left the server (0:1)
+[18:50:02] [connection] 127.0.0.1:50810 requests connection cookie.
+[18:50:03] [connection] incoming connection: 127.0.0.1:50810 id: 0
+[18:50:03] [join] Lest_ has joined the server (0:127.0.0.1)
+[18:50:16] Lest_ has logged in.
+[18:50:32] 
+=================================================================
+[18:50:32] Servidor Desligado: [19/02/2019 18:50:32]
+[18:50:32] =================================================================
+
+[18:50:43] 
+********************************************
+[18:50:43]        [19/02/2019 18:50:43]      
+[18:50:43] ********************************************
+
+[18:50:43] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[18:50:43] [BLB]: 24 Orgs Carregadas
+[18:50:43] [BLB]: 216 Casas Carregadas
+[18:50:43] [BLB]: 6 Empresas Carregadas
+[18:50:43] [BLB]: 24 Empresas Especiais Carregadas
+[18:50:43] [BLB]: 50 Carros Carregados
+[18:50:43] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[18:50:43] **************************************
+[18:50:43] *    Brasil Life Boy RP/RPG ®    *
+[18:50:43] *ºººººººººººººººººººººººººººººººººººº*
+[18:50:43] *    RPG versão 3.1 ®                *
+[18:50:43] *    Los Santos ®                    *
+[18:50:43] *------------------------------------*
+[18:50:43] *                  Servidor Ligado.  *
+[18:50:43] **************************************
+[18:50:43]  
+[18:50:43] Number of vehicle models: 73
+[18:50:46] Lest_ has logged in.
+[18:51:34] [part] Lest_ has left the server (0:1)
+[18:57:45] [connection] 127.0.0.1:56438 requests connection cookie.
+[18:57:46] [connection] incoming connection: 127.0.0.1:56438 id: 0
+[18:57:51] [join] Lest_ has joined the server (0:127.0.0.1)
+[18:58:11] Lest_ has logged in.
+[19:03:12] 
+=================================================================
+[19:03:12] Servidor Desligado: [19/02/2019 19:03:12]
+[19:03:12] =================================================================
+
+[19:03:24] 
+********************************************
+[19:03:24]        [19/02/2019 19:03:24]      
+[19:03:24] ********************************************
+
+[19:03:24] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[19:03:24] [BLB]: 24 Orgs Carregadas
+[19:03:24] [BLB]: 216 Casas Carregadas
+[19:03:24] [BLB]: 6 Empresas Carregadas
+[19:03:24] [BLB]: 24 Empresas Especiais Carregadas
+[19:03:24] [BLB]: 50 Carros Carregados
+[19:03:24] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[19:03:24] **************************************
+[19:03:24] *    Brasil Life Boy RP/RPG ®    *
+[19:03:24] *ºººººººººººººººººººººººººººººººººººº*
+[19:03:24] *    RPG versão 3.1 ®                *
+[19:03:24] *    Los Santos ®                    *
+[19:03:24] *------------------------------------*
+[19:03:24] *                  Servidor Ligado.  *
+[19:03:24] **************************************
+[19:03:24]  
+[19:03:24] Number of vehicle models: 73
+[19:03:29] Lest_ has logged in.
+[19:04:40] 
+=================================================================
+[19:04:40] Servidor Desligado: [19/02/2019 19:04:40]
+[19:04:40] =================================================================
+
+[19:04:51] 
+********************************************
+[19:04:51]        [19/02/2019 19:04:51]      
+[19:04:51] ********************************************
+
+[19:04:51] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[19:04:51] [BLB]: 24 Orgs Carregadas
+[19:04:51] [BLB]: 216 Casas Carregadas
+[19:04:51] [BLB]: 6 Empresas Carregadas
+[19:04:51] [BLB]: 24 Empresas Especiais Carregadas
+[19:04:51] [BLB]: 50 Carros Carregados
+[19:04:51] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[19:04:51] **************************************
+[19:04:51] *    Brasil Life Boy RP/RPG ®    *
+[19:04:51] *ºººººººººººººººººººººººººººººººººººº*
+[19:04:51] *    RPG versão 3.1 ®                *
+[19:04:51] *    Los Santos ®                    *
+[19:04:51] *------------------------------------*
+[19:04:51] *                  Servidor Ligado.  *
+[19:04:51] **************************************
+[19:04:51]  
+[19:04:51] Number of vehicle models: 73
+[19:04:55] Lest_ has logged in.
+[19:05:08] [part] Lest_ has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:05:49] 
+[19:05:49] Server Plugins
+[19:05:49] --------------
+[19:05:49]  Loading plugin: streamer
+[19:05:49] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[19:05:49]   Loaded.
+[19:05:49]  Loaded 1 plugins.
+
+[19:05:49] 
+[19:05:49] Filterscripts
+[19:05:49] ---------------
+[19:05:49]   Loading filterscript '0.amx'...
+[19:05:49]   Unable to load filterscript '0.amx'.
+[19:05:49]   Loaded 0 filterscripts.
+
+[19:05:49] 
+********************************************
+[19:05:49]        [19/02/2019 19:05:49]      
+[19:05:49] ********************************************
+
+[19:05:49] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[19:05:50] [BLB]: 24 Orgs Carregadas
+[19:05:50] [BLB]: 216 Casas Carregadas
+[19:05:50] [BLB]: 6 Empresas Carregadas
+[19:05:50] [BLB]: 24 Empresas Especiais Carregadas
+[19:05:50] [BLB]: 50 Carros Carregados
+[19:05:50] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[19:05:50] **************************************
+[19:05:50] *    Brasil Life Boy RP/RPG ®    *
+[19:05:50] *ºººººººººººººººººººººººººººººººººººº*
+[19:05:50] *    RPG versão 3.1 ®                *
+[19:05:50] *    Los Santos ®                    *
+[19:05:50] *------------------------------------*
+[19:05:50] *                  Servidor Ligado.  *
+[19:05:50] **************************************
+[19:05:50]  
+[19:05:50] Number of vehicle models: 73
+[19:06:37] [connection] 127.0.0.1:62669 requests connection cookie.
+[19:06:38] [connection] incoming connection: 127.0.0.1:62669 id: 0
+[19:06:39] [join] Lest_ has joined the server (0:127.0.0.1)
+[19:06:46] Lest_ has logged in.
+[19:09:32] [part] Lest_ has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[19:12:53] 
+[19:12:53] Server Plugins
+[19:12:53] --------------
+[19:12:53]  Loading plugin: streamer
+[19:12:53] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[19:12:53]   Loaded.
+[19:12:53]  Loaded 1 plugins.
+
+[19:12:53] 
+[19:12:53] Filterscripts
+[19:12:53] ---------------
+[19:12:53]   Loading filterscript '0.amx'...
+[19:12:53]   Unable to load filterscript '0.amx'.
+[19:12:53]   Loaded 0 filterscripts.
+
+[19:12:53] 
+********************************************
+[19:12:53]        [19/02/2019 19:12:53]      
+[19:12:53] ********************************************
+
+[19:12:53] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[19:12:54] [BLB]: 24 Orgs Carregadas
+[19:12:54] [BLB]: 216 Casas Carregadas
+[19:12:54] [BLB]: 6 Empresas Carregadas
+[19:12:54] [BLB]: 24 Empresas Especiais Carregadas
+[19:12:54] [BLB]: 50 Carros Carregados
+[19:12:54] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[19:12:54] **************************************
+[19:12:54] *    Brasil Life Boy RP/RPG ®    *
+[19:12:54] *ºººººººººººººººººººººººººººººººººººº*
+[19:12:54] *    RPG versão 3.1 ®                *
+[19:12:54] *    Los Santos ®                    *
+[19:12:54] *------------------------------------*
+[19:12:54] *                  Servidor Ligado.  *
+[19:12:54] **************************************
+[19:12:54]  
+[19:12:54] Number of vehicle models: 73
+[19:13:42] [connection] 127.0.0.1:63674 requests connection cookie.
+[19:13:43] [connection] incoming connection: 127.0.0.1:63674 id: 0
+[19:13:43] [join] Lest_ has joined the server (0:127.0.0.1)
+[19:13:51] Lest_ has logged in.
+[19:14:03] [part] Lest_ has left the server (0:1)
+[19:14:34] [connection] 127.0.0.1:63490 requests connection cookie.
+[19:14:35] [connection] incoming connection: 127.0.0.1:63490 id: 0
+[19:14:35] [join] Lest_ has joined the server (0:127.0.0.1)
+[19:14:48] Lest_ has logged in.
+[19:18:31] [part] Lest_ has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[11:40:36] 
+[11:40:36] Server Plugins
+[11:40:36] --------------
+[11:40:36]  Loading plugin: streamer
+[11:40:37] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[11:40:37]   Loaded.
+[11:40:37]  Loaded 1 plugins.
+
+[11:40:37] 
+[11:40:37] Filterscripts
+[11:40:37] ---------------
+[11:40:37]   Loading filterscript '0.amx'...
+[11:40:37]   Unable to load filterscript '0.amx'.
+[11:40:37]   Loaded 0 filterscripts.
+
+[11:40:37] 
+********************************************
+[11:40:37]        [23/02/2019 11:40:37]      
+[11:40:37] ********************************************
+
+[11:40:37] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[11:40:37] [BLB]: 24 Orgs Carregadas
+[11:40:37] [BLB]: 216 Casas Carregadas
+[11:40:37] [BLB]: 6 Empresas Carregadas
+[11:40:37] [BLB]: 24 Empresas Especiais Carregadas
+[11:40:37] [BLB]: 50 Carros Carregados
+[11:40:37] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[11:40:37] **************************************
+[11:40:37] *    Brasil Life Boy RP/RPG ®    *
+[11:40:37] *ºººººººººººººººººººººººººººººººººººº*
+[11:40:37] *    RPG versão 3.1 ®                *
+[11:40:37] *    Los Santos ®                    *
+[11:40:37] *------------------------------------*
+[11:40:37] *                  Servidor Ligado.  *
+[11:40:37] **************************************
+[11:40:37]  
+[11:40:37] Number of vehicle models: 73
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[11:51:34] 
+[11:51:34] Server Plugins
+[11:51:34] --------------
+[11:51:34]  Loading plugin: streamer
+[11:51:34] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[11:51:34]   Loaded.
+[11:51:34]  Loaded 1 plugins.
+
+[11:51:34] 
+[11:51:34] Filterscripts
+[11:51:34] ---------------
+[11:51:34]   Loading filterscript '0.amx'...
+[11:51:34]   Unable to load filterscript '0.amx'.
+[11:51:34]   Loaded 0 filterscripts.
+
+[11:51:34] 
+********************************************
+[11:51:34]        [23/02/2019 11:51:34]      
+[11:51:34] ********************************************
+
+[11:51:34] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[11:51:34] [BLB]: 24 Orgs Carregadas
+[11:51:34] [BLB]: 216 Casas Carregadas
+[11:51:34] [BLB]: 6 Empresas Carregadas
+[11:51:34] [BLB]: 24 Empresas Especiais Carregadas
+[11:51:34] [BLB]: 50 Carros Carregados
+[11:51:34] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[11:51:34] **************************************
+[11:51:34] *    Brasil Life Boy RP/RPG �    *
+[11:51:34] *������������������������������������*
+[11:51:34] *    RPG vers�o 3.1 �                *
+[11:51:34] *    Los Santos �                    *
+[11:51:34] *------------------------------------*
+[11:51:34] *                  Servidor Ligado.  *
+[11:51:34] **************************************
+[11:51:34]  
+[11:51:34] Number of vehicle models: 73
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[11:53:41] 
+[11:53:41] Server Plugins
+[11:53:41] --------------
+[11:53:41]  Loading plugin: streamer
+[11:53:41] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[11:53:41]   Loaded.
+[11:53:41]  Loaded 1 plugins.
+
+[11:53:41] 
+[11:53:41] Filterscripts
+[11:53:41] ---------------
+[11:53:41]   Loading filterscript '0.amx'...
+[11:53:41]   Unable to load filterscript '0.amx'.
+[11:53:41]   Loaded 0 filterscripts.
+
+[11:53:41] 
+********************************************
+[11:53:41]        [23/02/2019 11:53:41]      
+[11:53:41] ********************************************
+
+[11:53:41] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[11:53:41] [BLB]: 24 Orgs Carregadas
+[11:53:41] [BLB]: 216 Casas Carregadas
+[11:53:41] [BLB]: 6 Empresas Carregadas
+[11:53:41] [BLB]: 24 Empresas Especiais Carregadas
+[11:53:41] [BLB]: 50 Carros Carregados
+[11:53:41] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[11:53:41] **************************************
+[11:53:41] *    Brasil Life Boy RP/RPG ®    *
+[11:53:41] *ºººººººººººººººººººººººººººººººººººº*
+[11:53:41] *    RPG versão 3.1 ®                *
+[11:53:41] *    Los Santos ®                    *
+[11:53:41] *------------------------------------*
+[11:53:41] *                  Servidor Ligado.  *
+[11:53:41] **************************************
+[11:53:41]  
+[11:53:41] Number of vehicle models: 73
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[11:55:00] 
+[11:55:00] Server Plugins
+[11:55:00] --------------
+[11:55:00]  Loading plugin: streamer
+[11:55:00] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[11:55:00]   Loaded.
+[11:55:00]  Loaded 1 plugins.
+
+[11:55:00] 
+[11:55:00] Filterscripts
+[11:55:00] ---------------
+[11:55:00]   Loading filterscript '0.amx'...
+[11:55:00]   Unable to load filterscript '0.amx'.
+[11:55:00]   Loaded 0 filterscripts.
+
+[11:55:00] 
+********************************************
+[11:55:00]        [23/02/2019 11:55:00]      
+[11:55:00] ********************************************
+
+[11:55:00] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[11:55:00] [BLB]: 24 Orgs Carregadas
+[11:55:00] [BLB]: 216 Casas Carregadas
+[11:55:00] [BLB]: 6 Empresas Carregadas
+[11:55:00] [BLB]: 24 Empresas Especiais Carregadas
+[11:55:00] [BLB]: 50 Carros Carregados
+[11:55:00] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[11:55:00] **************************************
+[11:55:00] *    Brasil Life Boy RP/RPG ®    *
+[11:55:00] *ºººººººººººººººººººººººººººººººººººº*
+[11:55:00] *    RPG versão 3.1 ®                *
+[11:55:00] *    Los Santos ®                    *
+[11:55:00] *------------------------------------*
+[11:55:00] *                  Servidor Ligado.  *
+[11:55:00] **************************************
+[11:55:00]  
+[11:55:00] Number of vehicle models: 73
+[11:56:06] [connection] 127.0.0.1:50277 requests connection cookie.
+[11:56:07] [connection] incoming connection: 127.0.0.1:50277 id: 0
+[11:56:07] [join] Lest_ has joined the server (0:127.0.0.1)
+[11:56:26] Lest_ has logged in.
+[12:01:53] [part] Lest_ has left the server (0:1)
+[12:05:45] [connection] 127.0.0.1:57822 requests connection cookie.
+[12:05:46] [connection] incoming connection: 127.0.0.1:57822 id: 0
+[12:05:46] [join] Lest_ has joined the server (0:127.0.0.1)
+[12:05:57] Lest_ has logged in.
+[12:07:48] [part] Lest_ has left the server (0:1)
+[13:09:33] [connection] 127.0.0.1:63117 requests connection cookie.
+[13:09:34] [connection] incoming connection: 127.0.0.1:63117 id: 0
+[13:09:35] [join] Lest_ has joined the server (0:127.0.0.1)
+[13:09:52] Lest_ has logged in.
+[13:10:27] [part] Lest_ has left the server (0:1)
+[13:11:03] [connection] 127.0.0.1:63425 requests connection cookie.
+[13:11:04] [connection] incoming connection: 127.0.0.1:63425 id: 0
+[13:11:04] [join] Lest_ has joined the server (0:127.0.0.1)
+[13:11:18] Lest_ has logged in.
+[13:11:28] 
+=================================================================
+[13:11:28] Servidor Desligado: [23/02/2019 13:11:28]
+[13:11:28] =================================================================
+
+[13:11:40] 
+********************************************
+[13:11:40]        [23/02/2019 13:11:40]      
+[13:11:40] ********************************************
+
+[13:11:40] AllowAdminTeleport() : function is deprecated. Please see OnPlayerClickMap()
+[13:11:40] [BLB]: 24 Orgs Carregadas
+[13:11:40] [BLB]: 216 Casas Carregadas
+[13:11:40] [BLB]: 6 Empresas Carregadas
+[13:11:40] [BLB]: 24 Empresas Especiais Carregadas
+[13:11:40] [BLB]: 50 Carros Carregados
+[13:11:40] [BLB]: Maximo De Pickups = 400, Pickups Em Uso = 306
+[13:11:40] **************************************
+[13:11:40] *    Brasil Life Boy RP/RPG ®    *
+[13:11:40] *ºººººººººººººººººººººººººººººººººººº*
+[13:11:40] *    RPG versão 3.1 ®                *
+[13:11:40] *    Los Santos ®                    *
+[13:11:40] *------------------------------------*
+[13:11:40] *                  Servidor Ligado.  *
+[13:11:40] **************************************
+[13:11:40]  
+[13:11:40] Number of vehicle models: 73
+[13:11:44] Lest_ has logged in.
+[13:11:55] [part] Lest_ has left the server (0:1)
+[13:12:21] [connection] 127.0.0.1:55058 requests connection cookie.
+[13:12:22] [connection] incoming connection: 127.0.0.1:55058 id: 0
+[13:12:22] [join] Lest_ has joined the server (0:127.0.0.1)
+[13:12:29] Lest_ has logged in.
+[13:18:11] [part] Lest_ has left the server (0:1)
